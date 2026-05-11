@@ -1,3 +1,79 @@
-body {
-    background-color: violet;
+.body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Geometria";
+}
+
+.header,
+.main {
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 240px 0px;
+    gap: 72px;
+    max-height: 60px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.bc1-image {
+    position: absolute;
+    top: -100%;
+    right: -25%;
+    z-index: -1;
+    width: 80%;
+    height: auto;
+}
+
+.bc1-image img {
+    width: 100%;
+    height: auto;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+    list-style: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.list-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 70px 0px 280px;
+}
+
+.list-header li {
+    padding: 0px;
+}
+
+.list-header li a {
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 85px;
+    text-transform: uppercase;
+    color: #fefefe;
+    font-weight: 500;
+    font-family: "Geometria";
+}
+
+.social-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
 }
