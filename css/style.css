@@ -22,13 +22,6 @@ h3 {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-.wrapper-main {
-    background-color: #9fe4ff;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
 main h2 {
     font-size: 70.5px;
     line-height: 74px;
@@ -452,11 +445,4 @@ main h3 {
     margin-top: 200px;
     justify-content: center;
     margin-bottom: 300px;
-}
-
-.part7 h2 {
-    font-size: 70px;
-    line-height: 70.5px;
-    color: #1a1a1a;
-    font-weight: 500;
 }
