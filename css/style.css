@@ -3,6 +3,8 @@
     padding: 0px;
     font-weight: 500;
     font-family: "Geometria";
+    background-color: #68d4ff;
+
 }
 
 .header,
@@ -11,9 +13,7 @@
 }
 
 .wrapper-main {
-    background-image: url(../img/bg_1.png);
-    background-size: auto;
-    background-position: center top;
+    background-color: #9fe4ff;
     display: flex;
     flex-direction: column;
     height: 100%;
