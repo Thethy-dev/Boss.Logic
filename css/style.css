@@ -464,6 +464,15 @@ main h3 {
     color: #ffffff;
     font-weight: 300;
     position: relative;
+    margin: 0;
+}
+
+.footer .boss {
+    max-width: 220px;
+}
+
+.footer .boss img {
+    margin-bottom: 30px;
 }
 
 .footer .boss p::before {
@@ -475,22 +484,6 @@ main h3 {
     top: -15px;
 }
 
-.footer .boss {
-    max-width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    position: relative;
-}
-
-.footer .boss img {
-    position: absolute;
-    bottom: 170px;
-    left: 0px;
-}
-
 .footer h2 {
     font-size: 14px;
     letter-spacing: 1px;
@@ -498,6 +491,8 @@ main h3 {
     text-transform: uppercase;
     color: #0099ff;
     font-weight: 600;
+    margin: 0px;
+    margin-bottom: 15px;
 }
 
 .footer ul {
@@ -508,6 +503,22 @@ main h3 {
     list-style: none;
 }
 
+.footer-info ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;
+}
+
+.footer-info ul .lii {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.footer-info .TOUCH p {
+    padding: 0;
+    margin: 0;
+}
 
 .footer .links {
     display: flex;
