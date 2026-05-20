@@ -97,7 +97,8 @@ main h3 {
 }
 
 .part1 {
-    margin-topv: 50px;
+    margin-top: 50px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -467,6 +468,7 @@ main h3 {
     margin: 0;
 }
 
+
 .footer .boss {
     max-width: 220px;
 }
@@ -503,11 +505,13 @@ main h3 {
     list-style: none;
 }
 
-.footer-info ul {
+.footer-info .touch_ul {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 20px 140px;
     grid-template-rows: 1fr 1fr 1fr;
     padding: 0;
+    column-gap: 2px;
+    row-gap: 2px;
 }
 
 .footer-info ul .lii {
@@ -530,4 +534,28 @@ main h3 {
 .footer .links ul {
     padding: 0;
     margin: 0;
+}
+
+.footer button {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #0099ff;
+    border: 2px solid #0099ff;
+    border-radius: 50px;
+    padding: 0px 40px
+}
+
+input {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: transparent;
+    border: 0.5px solid #ffffff;
+    border-radius: 50px;
+    padding: 0px 40px;
 }
