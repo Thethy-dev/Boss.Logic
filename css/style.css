@@ -505,13 +505,8 @@ main h3 {
     list-style: none;
 }
 
-.footer-info .touch_ul {
-    display: grid;
-    grid-template-columns: 20px 140px;
-    grid-template-rows: 1fr 1fr 1fr;
+.footer-info .TOUCH {
     padding: 0;
-    column-gap: 2px;
-    row-gap: 2px;
 }
 
 .footer-info ul .lii {
