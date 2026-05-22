@@ -2,6 +2,13 @@
     margin: 0px;
     padding: 0px;
     font-family: "Geometria";
+    background-color: #fff;
+    max-width: 100vw;
+}
+
+html,
+body {
+    overflow-x: hidden;
 }
 
 body h2,
@@ -18,7 +25,31 @@ h3 {
 
 .header,
 .main {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.bc1 {
+    position: absolute;
+    z-index: -1;
+    top: -70%;
+    right: -30%;
+    object-fit: cover;
+}
+
+.bc2 {
+    position: absolute;
+    z-index: -1;
+    top: 900px;
+    left: -100px;
+}
+
+.bc4 {
+    position: absolute;
+    z-index: -1;
+    top: 4640px;
+    right: -370px;
 }
 
 main h2 {
@@ -56,6 +87,11 @@ button {
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
+}
+
+.header .menu-button,
+.menu {
+    display: none;
 }
 
 .list {
@@ -471,6 +507,52 @@ button {
     margin-bottom: 300px;
 }
 
+.part7 button {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #0099ff;
+    border: 2px solid #0099ff;
+    border-radius: 50px;
+    padding: 16px 70px
+}
+
+.part7 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 242.5px;
+    gap: 90px;
+}
+
+.part7 .text {
+    margin-right: 25px;
+}
+
+.part7 .h2_7 {
+    max-width: 620px;
+    position: relative;
+    left: 25px;
+    margin-bottom: 70px;
+}
+
+.part7 .h2_7::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 212.5px;
+    background-color: #0099ff;
+    left: -25px;
+}
+
+.part7 button:hover {
+    background-color: #57bcff;
+    border: 2px solid #57bcff;
+}
+
+
 .footer .footer-info {
     display: flex;
     flex-direction: row;
@@ -616,7 +698,7 @@ input::placeholder {
     text-transform: none;
 }
 
-vinput::placeholder:hover {
+input::placeholder:hover {
     color: #cecece;
 }
 
@@ -671,4 +753,31 @@ vinput::placeholder:hover {
     display: flex;
     flex-direction: row;
     gap: 45px;
+}
+
+@media (max-width: 480px) {
+
+    .part1,
+    .part2,
+    .part3,
+    .part4,
+    .part5,
+    .part6,
+    .part7 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header .list-header {
+        display: none;
+    }
+
+    .header {
+        gap: 20px;
+    }
+
+    .header .menu-button,
+    .menu {
+        display: block;
+    }
 }
