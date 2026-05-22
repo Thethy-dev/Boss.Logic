@@ -853,7 +853,7 @@ input::placeholder:hover {
     gap: 45px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .wrapper {
         max-width: 100%;
         width: 100%;
