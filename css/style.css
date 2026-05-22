@@ -90,12 +90,7 @@ button {
     padding: 0 20px;
 }
 
-.header .menu-button,
-.menu {
-    display: none;
-}
-
-.list {
+.list-m {
     display: flex;
     flex-direction: row;
     gap: 54px;
@@ -114,11 +109,11 @@ button {
     padding: 0px 70px 0px 280px;
 }
 
-.list-header li {
+.list-m li {
     padding: 0px;
 }
 
-.list-header li a {
+.list-m li a {
     text-decoration: none;
     font-size: 13px;
     letter-spacing: 1px;
@@ -200,11 +195,25 @@ button {
     color: #ffffff;
     background-color: #0099ff;
     border: 2px solid #0099ff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.part1 .button1:hover {
-    background-color: #57bcff;
-    border: 2px solid #57bcff;
+.part1 .button1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(178, 221, 247, 0.842), transparent);
+    top: -100%;
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+.part1 .button1:hover::before {
+    top: 100%;
+    left: 100%;
 }
 
 .buttons .button2 {
@@ -218,11 +227,25 @@ button {
     border: 2px solid #0099ff;
     margin-left: 28px;
     font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.part1 .button2:hover {
-    color: #0099ff;
-    background-color: #e9f6ff;
+.part1 .button2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(0, 157, 255, 0.842), transparent);
+    top: 100%;
+    right: 100%;
+    transition: all 0.5s ease;
+}
+
+.part1 .button2:hover::before {
+    top: -100%;
+    right: -100%;
 }
 
 .button2,
@@ -287,11 +310,25 @@ button {
     background-color: #0099ff;
     border: 2px solid #0099ff;
     font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.part2 .button2:hover {
-    background-color: #57bcff;
-    border: 2px solid #57bcff;
+.part2 .button2::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(178, 221, 247, 0.842), transparent);
+    top: -100%;
+    right: -100%;
+    transition: all 0.5s ease;
+}
+
+.part2 .button2:hover::before {
+    top: 100%;
+    right: 100%;
 }
 
 .part2 .text {
@@ -351,11 +388,25 @@ button {
     color: #ffffff;
     background-color: #0099ff;
     border: 2px solid #0099ff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.part3 .button_3:hover {
-    background-color: #57bcff;
-    border: 2px solid #57bcff;
+.part3 .button_3::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(178, 221, 247, 0.842), transparent);
+    top: -100%;
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+.part3 .button_3:hover::before {
+    top: 100%;
+    left: 100%;
 }
 
 .part4 h2 {
@@ -374,12 +425,26 @@ button {
     background-color: #0099ff;
     border: 2px solid #0099ff;
     border-radius: 50px;
-    padding: 0px 70px
+    padding: 0px 70px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.part4 button:hover {
-    background-color: #57bcff;
-    border: 2px solid #57bcff;
+.part4 button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(178, 221, 247, 0.842), transparent);
+    top: -100%;
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+.part4 button:hover::before {
+    top: 100%;
+    left: 100%;
 }
 
 .part4 p {
@@ -517,7 +582,26 @@ button {
     background-color: #0099ff;
     border: 2px solid #0099ff;
     border-radius: 50px;
-    padding: 16px 70px
+    padding: 16px 70px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.part7 button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(178, 221, 247, 0.842), transparent);
+    top: -100%;
+    left: -100%;
+    transition: all 0.5s ease;
+}
+
+.part7 button:hover::before {
+    top: 100%;
+    left: 100%;
 }
 
 .part7 {
@@ -549,10 +633,9 @@ button {
 }
 
 .part7 button:hover {
-    background-color: #57bcff;
-    border: 2px solid #57bcff;
+    background-color: #139efc;
+    border: 2px solid #18a0fa;
 }
-
 
 .footer .footer-info {
     display: flex;
@@ -667,12 +750,26 @@ button {
     background-color: #0099ff;
     border: 2px solid #0099ff;
     border-radius: 50px;
-    padding: 0px 40px
+    padding: 0px 40px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.footer button:hover {
-    background-color: #57bcff;
-    border: 2px solid #57bcff;
+.footer button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(178, 221, 247, 0.842), transparent);
+    top: -100%;
+    right: -100%;
+    transition: all 0.5s ease;
+}
+
+.footer button:hover::before {
+    top: 100%;
+    right: 100%;
 }
 
 input {
@@ -756,112 +853,6 @@ input::placeholder:hover {
     gap: 45px;
 }
 
-@media (max-width: 480px) {
+@media (max-width:360px) {
 
-    .part1,
-    .part2,
-    .part3,
-    .part4,
-    .part5,
-    .part6,
-    .part7 {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .header .list-header {
-        display: none;
-    }
-
-    .header {
-        gap: 20px;
-    }
-
-    .header .menu-button,
-    .menu {
-        display: block;
-    }
-
-    .menu-button {
-        display: block;
-        background-color: transparent;
-        border: none;
-        overflow: hidden;
-        z-index: 1001;
-        position: relative;
-        padding: 10px;
-        cursor: pointer;
-        transition: 0.3s;
-        text-align: center;
-    }
-
-    .cost .spectator,
-    .cost .participant {
-        
-        max-width: 550px;
-    }
-
-    .menu-button:hover {
-        opacity: 0.7;
-    }
-
-    .menu-button svg {
-        width: 55px;
-        height: 55px;
-    }
-    
-    .menu.active {
-        transform: translateX(0);
-    }
-
-
-    header .navigation ul {
-        display: none;
-    }
-
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(135deg, rgba(1, 0, 1, 0.95) 0%, rgba(14, 2, 31, 0.95) 100%);
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        list-style: none;
-        text-align: center;
-    }
-}
-
-@media (min-width: 769px) {
-    .menu-button {
-        display: none !important;
-    }
-
-    header .navigation {
-        display: flex;
-        justify-content: center;
-    }
-
-    header .navigation ul {
-        display: flex !important;
-        gap: 50px;
-        list-style: none;
-    }
-
-    .menu {
-        display: none !important;
-    }
 }
