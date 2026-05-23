@@ -190,7 +190,7 @@ button {
 .buttons .button1 {
     font-size: 14px;
     letter-spacing: 1px;
-    line-height: 48px;
+    line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #0099ff;
@@ -219,7 +219,7 @@ button {
 .buttons .button2 {
     font-size: 14px;
     letter-spacing: 1px;
-    line-height: 48px;
+    line-height: 18px;
     text-transform: uppercase;
     color: #2b2b2b;
     font-weight: bold;
@@ -909,21 +909,27 @@ input::placeholder:hover {
         max-width: 280px !important;
     }
 
-    .part1 p {
-        font-size: 18px !important;
+    .part1 .p2 {
+        font-size: 14px !important;
         text-align: center;
-    }
-
-    .part1 .buttons {
-        flex-direction: column;
-        display: flex;
-        gap: 20px;
+        max-width: 280px;
+        padding-left: 200px;
     }
 
     .part1 button {
-        padding: 2px 40px;
+        padding: 2px 30px;
         text-align: center;
-        border-rad;
+        font-size: 14px !important;
+    }
+
+    .part1 .buttons {
+        padding: 0 200px;
+        gap: 20px;
+        display: flex;
+    }
+
+    .part1 .button2 {
+        margin-left: 0;
     }
 
     p {
@@ -1137,6 +1143,21 @@ input::placeholder:hover {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        max-width: 300px;
+    }
+
+    .footer .buttons {
+        gap: 5px;
+    }
+
+    .footer button, input {
+        padding: 2px 12px !important;
+    }
+
+    .footer input {
+        max-width: 160px;
+    }
+
     }
 
     .boss p {
