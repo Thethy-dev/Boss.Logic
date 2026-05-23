@@ -608,7 +608,7 @@ button {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    padding-left: 242.5px;
+    padding-left: 200px;
     gap: 90px;
 }
 
@@ -621,6 +621,13 @@ button {
     position: relative;
     left: 25px;
     margin-bottom: 70px;
+    font-size: 48px;
+    line-height: 52px;
+}
+
+.part7 img {
+    max-width: 800px;
+    height: auto;
 }
 
 .part7 .h2_7::before {
@@ -646,7 +653,7 @@ button {
 }
 
 .footer {
-    padding: 70px 240px;
+    padding: 70px 200px;
     background-color: #001726;
     padding-bottom: 0;
 }
@@ -853,10 +860,15 @@ input::placeholder:hover {
     gap: 45px;
 }
 
-@media (max-width: 480px) {
-    .bc1, .bc2, .bc3, .bc4 {
+@media screen and (max-width: 480px) {
+
+    .bc1,
+    .bc2,
+    .bc3,
+    .bc4 {
         display: none !important;
     }
+
     .wrapper {
         max-width: 320px;
         width: 100%;
@@ -889,12 +901,6 @@ input::placeholder:hover {
 
     h3 {
         font-size: 14px !important;
-    }
-
-    .buttons {
-        flex-direction: column;
-        display: flex;
-        gap: 15px;
     }
 
     button {
@@ -944,6 +950,7 @@ input::placeholder:hover {
         left: 2.5px;
         height: 108px;
     }
+
 
     .part3 h2 {
         font-size: 32px !important;
@@ -1051,13 +1058,13 @@ input::placeholder:hover {
     }
 
     .part7 h2 {
-        font-size: 24px !important;
-        line-height: 26px;
+        font-size: 32px !important;
+        line-height: 33px !important;
         margin-bottom: 20px !important;
     }
-    
+
     .part7 h2::before {
-        height: 52px !important;
+        height: 99px !important;
     }
 
     .part7 .text {
@@ -1073,6 +1080,56 @@ input::placeholder:hover {
     }
 
     .footer {
-        padding: 20px 0;
+        padding: 20px 5px;
+    }
+
+    .footer h2 {
+        text-align: center !important;
+    }
+
+    .footer .footer-info {
+        gap: 10px !important;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .boss {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .boss p {
+        text-align: center;
+    }
+
+    .boss p::before {
+        left: 25px !important;
+        content: "";
+        position: absolute;
+        width: 165px;
+        height: 1px;
+        background-color: #0099ff;
+        top: -15px;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .TOUCH {
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .social-logo-footer {
+        display: flex;
+        justify-content: center;
     }
 }
