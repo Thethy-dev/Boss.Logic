@@ -853,7 +853,7 @@ input::placeholder:hover {
     gap: 45px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .bc1, .bc2, .bc3, .bc4 {
         display: none !important;
     }
