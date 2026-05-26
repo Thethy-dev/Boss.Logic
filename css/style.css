@@ -1,4 +1,4 @@
-html{
+html {
     font-size: 0.7px;
 }
 
@@ -21,6 +21,18 @@ h3,
 p,
 h4 {
     font-family: "Geometria";
+}
+
+.part1,
+.part2,
+.part3,
+.part,
+.part5,
+.part6,
+.part7 {
+    display: flex;
+    flex-direction: column !important;
+    max-width: 320px;
 }
 
 body h2,
@@ -73,12 +85,11 @@ main h3 {
     flex-direction: row;
     justify-content: center;
     padding: 0rem 240rem;
-    gap: 72rem;
+    gap: 26rem;
     max-height: 60rem;
     overflow: hidden;
     margin-bottom: 35rem;
     max-width: 1510rem;
-
 }
 
 button {
@@ -107,7 +118,7 @@ button {
 }
 
 .list-header {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     padding: 0rem 70rem 0rem 280rem;
@@ -418,6 +429,12 @@ button {
     line-height: 74rem;
     color: #1a1a1a;
     text-align: center;
+}
+
+.part4 {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .part4 button {
@@ -864,9 +881,98 @@ input::placeholder:hover {
     gap: 45rem;
 }
 
+.menu {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform: translateY(-100%);
+    background-color: rgba(0, 85, 141, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10001;
+    text-align: center;
+}
+
+.menu-button {
+    width: 50px;
+    height: 8px;
+    background-color: #bbe3fd;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: #bbe3fd;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: -14px;
+}
+
+
+.menu-button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background-color: #bbe3fd;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+}
+
+.menu.active {
+    transform: translateY(0%);
+}
+
+.list-button {
+    list-style: none;
+}
+
+.menu li {
+    padding: 0rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 24rem;
+    letter-spacing: 1.5rem;
+    line-height: 85rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Geometria";
+}
+
 @media screen and (min-width: 768px) {
     html {
         font-size: 0.8px;
+    }
+
+    .part1,
+    .part2,
+    .part3,
+    .part4,
+    .part5,
+    .part6,
+    .part7 {
+        max-width: 720px;
     }
 }
 
@@ -874,17 +980,69 @@ input::placeholder:hover {
     html {
         font-size: 1px;
     }
+
+    .menu-button,
+    .menu {
+        display: none;
+    }
+
+    .list-header {
+        display: flex;
+    }
+
+    .part1,
+    .part2,
+    .part3,
+    .part5,
+    .part6,
+    .part7 {
+        max-width: 1100px;
+    }
 }
 
 @media screen and (min-width: 1920px) {
     html {
         font-size: 1.00px;
     }
-}
 
-@media screen and (min-width: 2260px) {
-    html {
-        font-size: 1.5px;
+    .part1,
+    .part2,
+    .part3,
+    .part5,
+    .part6,
+    .part7 {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    .part1,
+    .part2,
+    .part3,
+    .part5,
+    .part6,
+    .part7 {
+        display: flex;
+        flex-direction: row !important;
+        max-width: 1820px;
+    }
+
+    .part7 {
+        gap: 280px;
     }
 }
+    @media screen and (min-width: 2260px) {
+        html {
+            font-size: 1.5px;
+        }
 
+        .part1,
+        .part2,
+        .part3,
+        .part5,
+        .part6,
+        .part7 {
+            display: flex;
+            flex-direction: row !important;
+        }
+
+    }
