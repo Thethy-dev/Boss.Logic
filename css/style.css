@@ -89,7 +89,7 @@ main h3 {
     flex-direction: row;
     justify-content: center;
     padding: 0rem 240rem;
-    gap: 26rem;
+    gap: 20rem;
     max-height: 60rem;
     overflow: hidden;
     margin-bottom: 35rem;
@@ -106,7 +106,7 @@ button {
     max-width: 1510rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 20rem;
+    padding: 60rem 20rem 0;
 }
 
 .list-m {
@@ -119,6 +119,15 @@ button {
 .logo {
     display: flex;
     align-items: center;
+   width: 210rem;
+   height: 20rem;
+   min-width:  200rem;
+   min-height: 32rem;
+}
+
+.logo_1 {
+    width: 100%;
+    height: 100%;
 }
 
 .list-header {
@@ -436,9 +445,9 @@ button {
 }
 
 .part4 {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .part4 button {
@@ -454,6 +463,12 @@ button {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+}
+
+.bbutton {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .part4 button::before {
@@ -904,6 +919,8 @@ input::placeholder:hover {
 .menu-button {
     width: 50px;
     height: 8px;
+    min-width: 30px;
+    min-height: 8px;
     background-color: #bbe3fd;
     border-radius: 50px;
     border: none;
@@ -1034,19 +1051,20 @@ input::placeholder:hover {
         gap: 280px;
     }
 }
-    @media screen and (min-width: 2260px) {
-        html {
-            font-size: 1.5px;
-        }
 
-        .part1,
-        .part2,
-        .part3,
-        .part5,
-        .part6,
-        .part7 {
-            display: flex;
-            flex-direction: row !important;
-        }
-
+@media screen and (min-width: 2260px) {
+    html {
+        font-size: 1.5px;
     }
+
+    .part1,
+    .part2,
+    .part3,
+    .part5,
+    .part6,
+    .part7 {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+}
