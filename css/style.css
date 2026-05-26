@@ -16,6 +16,10 @@ body {
     scroll-behavior: smooth;
 }
 
+button:hover {
+    box-shadow: #099bfc 2px 2px 2px !important;
+}
+
 body h2,
 h3,
 p,
