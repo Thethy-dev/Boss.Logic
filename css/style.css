@@ -17,7 +17,7 @@ body {
 }
 
 button:hover {
-    box-shadow: #099bfc 2px 2px 2px !important;
+    box-shadow: rgba(9, 155, 252, 0.9856) 2px 2px 2px 2px !important;
 }
 
 body h2,
