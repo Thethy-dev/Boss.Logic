@@ -63,22 +63,26 @@ h3 {
 .bc1 {
     position: absolute;
     z-index: -1;
-    top: -80%;
-    left: 35%;
+    top: -14%;
+    left: 45%;
     object-fit: cover;
+    min-width: 50rem;
+    min-height: 50rem;
+    width: 500rem;
+    height: 500rem;
 }
 
 .bc2 {
     position: absolute;
     z-index: -1;
-    top: 900rem;
-    left: -100rem;
+    top: 1300rem;
+    left: -200rem;
 }
 
 .bc4 {
     position: absolute;
     z-index: -1;
-    top: 4640rem;
+    top: 8500rem;
     right: -370rem;
 }
 
@@ -188,7 +192,7 @@ button {
     align-items: center;
     padding-left: 25rem;
     max-height: 800rem;
-    margin-bottom: 260rem;
+    margin-bottom: 550rem;
 }
 
 .part1 .text {
@@ -200,8 +204,7 @@ button {
     font-size: 70rem;
     line-height: 74rem;
     color: #1a1a1a;
-    max-width: 700rem;
-    min-width: 695rem;
+    max-width: 100% !important;
     margin-left: 10rem;
     margin: 0;
 }
@@ -210,7 +213,7 @@ button {
     content: "";
     position: absolute;
     width: 4rem;
-    height: 125rem;
+    height: 292rem;
     background-color: #0099ff;
     margin-right: 10rem;
     left: -25rem;
@@ -271,11 +274,11 @@ button {
     font-weight: bold;
     background-color: #ffffff;
     border: 2rem solid #0099ff;
-    margin-left: 28rem;
     font-weight: bold;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    margin-top: 15rem;
 }
 
 .part1 .button2::before {
@@ -393,10 +396,10 @@ button {
 .part3 h2::before {
     content: "";
     position: absolute;
-    width: 4rem;
-    height: 130rem;
+    width: 5rem;
+    height: 285rem;
     background-color: #0099ff;
-    left: 345rem;
+    left: 5rem;
 }
 
 .part3 {
@@ -460,6 +463,11 @@ button {
     left: 100%;
 }
 
+.part3 .image {
+    display: flex;
+    justify-content: center;
+}
+
 .part4 h2 {
     font-size: 70rem;
     line-height: 74rem;
@@ -467,10 +475,11 @@ button {
     text-align: center;
 }
 
-.part4 {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
+.part4 figcaption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .part4 button {
@@ -486,6 +495,8 @@ button {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: block;
+    min-width: 250rem;
 }
 
 .bbutton {
@@ -530,11 +541,23 @@ button {
     margin: none;
 }
 
+.part4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .part4 .cards,
 .bbutton {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.part4 .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 35rem;
 }
 
 .part4 .figure_1,
@@ -558,6 +581,7 @@ button {
     margin-top: 250rem;
     margin-bottom: 20rem;
     min-height: 1300rem;
+    text-align: center;
 }
 
 .part5 .imgga {
@@ -573,6 +597,8 @@ button {
     font-weight: 600;
     position: relative;
     margin-bottom: 50rem;
+    text-align: left;
+    padding-left: 55rem;
 }
 
 .part5 h2::before {
@@ -581,7 +607,7 @@ button {
     width: 4rem;
     height: 212.5rem;
     background-color: #0099ff;
-    left: -10rem;
+    left: 32.5rem;
 }
 
 .part5 .p_5 {
@@ -609,11 +635,6 @@ button {
     letter-spacing: 1rem;
     line-height: 24rem;
     text-align: center;
-}
-
-.part5 .left {
-    position: absolute;
-    left: -25rem;
 }
 
 .part5 .text {
@@ -703,7 +724,7 @@ button {
     content: "";
     position: absolute;
     width: 4rem;
-    height: 104rem;
+    height: 148rem;
     background-color: #0099ff;
     left: -25rem;
 }
@@ -711,6 +732,11 @@ button {
 .part7 button:hover {
     background-color: #139efc;
     border: 2rem solid #18a0fa;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
 }
 
 .footer .footer-info {
@@ -727,6 +753,7 @@ button {
     background-color: #001726;
     padding-bottom: 0;
     width: 100%;
+
 }
 
 .footer .boss p {
