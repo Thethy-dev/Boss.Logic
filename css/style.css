@@ -2,6 +2,10 @@ html {
     font-size: 0.7px;
 }
 
+html h2 {
+    font-size: 1.2px;
+}
+
 .body {
     margin: 0rem;
     padding: 0rem;
@@ -18,6 +22,11 @@ body {
 
 button:hover {
     box-shadow: rgba(9, 155, 252, 0.9856) 2px 2px 2px 2px !important;
+}
+
+img {
+    max-width: 90% !important;
+    min-width: 70% !important;
 }
 
 body h2,
@@ -54,8 +63,8 @@ h3 {
 .bc1 {
     position: absolute;
     z-index: -1;
-    top: -70%;
-    right: -30%;
+    top: -80%;
+    left: 35%;
     object-fit: cover;
 }
 
@@ -87,26 +96,25 @@ main h3 {
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 0rem 240rem;
-    gap: 20rem;
+    justify-content: space-between;
+    gap: 15rem;
     max-height: 60rem;
+    width: 100%;
     overflow: hidden;
-    margin-bottom: 35rem;
-    max-width: 1510rem;
 }
 
 button {
     transition: 0.4s;
 }
 
+.main {
+    padding-top: 40rem;
+}
+
 .wrapper {
     margin: 0rem auto;
     width: 100%;
-    max-width: 1510rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 60rem 20rem 0;
+    padding: auto;
 }
 
 .list-m {
@@ -119,10 +127,12 @@ button {
 .logo {
     display: flex;
     align-items: center;
-   width: 210rem;
-   height: 20rem;
-   min-width:  200rem;
-   min-height: 32rem;
+    width: 180rem;
+    height: 27rem;
+    min-width: 140rem;
+    min-height: 24rem;
+    margin-right: 25rem;
+    padding-top: 10rem;
 }
 
 .logo_1 {
@@ -153,10 +163,18 @@ button {
 }
 
 .social-logo {
-    display: flex;
-    flex-direction: row;
-    gap: 20rem;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10rem;
+    column-gap: 10rem;
+}
+
+.social-logo_1 {
+        display: flex;
+        flex-direction: row;
+        gap: 20rem;
+        padding-left: 45rem;
 }
 
 .part1 {
@@ -378,17 +396,22 @@ button {
     width: 4rem;
     height: 130rem;
     background-color: #0099ff;
-    left: -0;
+    left: 345rem;
 }
 
 .part3 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 70rem;
+    gap: 235rem;
     align-items: center;
     position: relative;
+    justify-content: center;
     margin-bottom: 300rem;
+}
+
+.part2, .part3 {
+    justify-content: center !important;
 }
 
 .part3 h3 {
@@ -533,6 +556,8 @@ button {
     flex-direction: row;
     gap: 115rem;
     margin-top: 250rem;
+    margin-bottom: 20rem;
+    min-height: 1300rem;
 }
 
 .part5 .imgga {
@@ -554,9 +579,9 @@ button {
     content: "";
     position: absolute;
     width: 4rem;
-    height: 135rem;
+    height: 212.5rem;
     background-color: #0099ff;
-    left: -25rem;
+    left: -10rem;
 }
 
 .part5 .p_5 {
@@ -564,6 +589,8 @@ button {
     line-height: 24rem;
     color: #2b2b2b;
     margin-bottom: 50rem;
+    max-width: 90%;
+    padding-left: 10rem;
 }
 
 .part5 .comment h3 {
@@ -574,12 +601,14 @@ button {
     color: #0099ff;
     font-weight: 600;
     margin: 0rem;
+    text-align: center;
 }
 
 .part5 .p_2_5 {
     font-size: 18rem;
     letter-spacing: 1rem;
     line-height: 24rem;
+    text-align: center;
 }
 
 .part5 .left {
@@ -593,9 +622,9 @@ button {
 
 .part6 .images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 170rem;
-    grid-row-gap: 60rem;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20rem;
+    grid-row-gap: 50rem;
 }
 
 .part6 .mg {
@@ -611,6 +640,7 @@ button {
     margin-top: 200rem;
     justify-content: center;
     margin-bottom: 300rem;
+    margin-top: 200rem;
 }
 
 .part7 button {
@@ -648,7 +678,6 @@ button {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    padding-left: 200rem;
     gap: 90rem;
 }
 
@@ -660,7 +689,7 @@ button {
     max-width: 620rem;
     position: relative;
     left: 25rem;
-    margin-bottom: 70rem;
+    margin-bottom: 30rem;
     font-size: 48rem;
     line-height: 52rem;
 }
@@ -690,12 +719,14 @@ button {
     flex-wrap: nowrap;
     gap: 120rem;
     margin-bottom: 45rem;
+    justify-content: center;
 }
 
 .footer {
     padding: 70rem 200rem;
     background-color: #001726;
     padding-bottom: 0;
+    width: 100%;
 }
 
 .footer .boss p {
@@ -775,6 +806,8 @@ button {
     padding: 0;
     margin: 0;
 }
+
+
 
 .footer .links {
     display: flex;
@@ -912,6 +945,8 @@ input::placeholder:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
     z-index: 10001;
     text-align: center;
 }
@@ -993,8 +1028,25 @@ input::placeholder:hover {
     .part5,
     .part6,
     .part7 {
-        max-width: 720px;
+        max-width: 100%;
+        flex-direction: row !important;
     }
+
+    .social-logo {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center
+    }
+
+    .header {
+        padding-left: 30rem;
+        padding-right: 30rem;
+        box-sizing: border-box;
+    }
+
+    html h2 {
+    font-size: 1.4px;
+}
 }
 
 @media screen and (min-width: 1200px) {
@@ -1011,14 +1063,10 @@ input::placeholder:hover {
         display: flex;
     }
 
-    .part1,
-    .part2,
-    .part3,
-    .part5,
-    .part6,
-    .part7 {
-        max-width: 1100px;
-    }
+    html h2 {
+    font-size: 1.6px;
+}
+
 }
 
 @media screen and (min-width: 1920px) {
@@ -1026,30 +1074,14 @@ input::placeholder:hover {
         font-size: 1.00px;
     }
 
-    .part1,
-    .part2,
-    .part3,
-    .part5,
-    .part6,
-    .part7 {
-        display: flex;
-        flex-direction: row !important;
-    }
-
-    .part1,
-    .part2,
-    .part3,
-    .part5,
-    .part6,
-    .part7 {
-        display: flex;
-        flex-direction: row !important;
-        max-width: 1820px;
-    }
 
     .part7 {
         gap: 280px;
     }
+
+    html h2 {
+    font-size: 1.8px;
+}
 }
 
 @media screen and (min-width: 2260px) {
@@ -1057,14 +1089,14 @@ input::placeholder:hover {
         font-size: 1.5px;
     }
 
-    .part1,
-    .part2,
-    .part3,
-    .part5,
-    .part6,
-    .part7 {
-        display: flex;
-        flex-direction: row !important;
+    .header {
+        padding-left: 60rem;
+        padding-right: 60rem;
+        box-sizing: border-box;
     }
+
+    html h2 {
+    font-size: 2.0px;
+}
 
 }
