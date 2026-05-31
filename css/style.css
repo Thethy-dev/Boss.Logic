@@ -874,7 +874,7 @@ button {
 
 .footer .links li {
     font-size: 20rem;
-    margin-bottom: 5rem;
+    margin-bottom: 5remv;
 }
 
 .footer button {
@@ -887,6 +887,7 @@ button {
     border: 2rem solid #0099ff;
     border-radius: 50rem;
     padding: 0rem 120rem;
+
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
