@@ -743,18 +743,21 @@ button {
 
 .footer .footer-info {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     gap: 120rem;
     margin-bottom: 45rem;
     justify-content: center;
+    padding: 0 10rem;
+    align-items: center;
 }
 
 .footer {
-    padding: 70rem 200rem;
+    padding: 70rem 10rem;
     background-color: #001726;
     padding-bottom: 0;
     width: 100%;
+    box-sizing: border-box;
 
 }
 
@@ -767,7 +770,17 @@ button {
 }
 
 .footer .boss {
-    max-width: 220rem;
+    max-width: 360rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .boss p {
+    text-align: center;
+    font-size: 18rem;
+    letter-spacing: 1rem;
 }
 
 .footer .boss img {
@@ -777,19 +790,26 @@ button {
 .footer .boss p::before {
     content: "";
     position: absolute;
-    width: 160rem;
+    width: 320rem;
     height: 1rem;
     background-color: #0099ff;
     top: -15rem;
 }
 
+.footer .footer-info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer h2 {
-    font-size: 14rem;
+    font-size: 22rem;
     letter-spacing: 1rem;
-    line-height: 26rem;
+    line-height: 28rem;
     text-transform: uppercase;
     color: #0099ff;
     font-weight: 600;
+    text-align: center;
     margin: 0rem;
     margin-bottom: 15rem;
 }
@@ -817,8 +837,9 @@ button {
 }
 
 .footer-info svg {
-    min-height: 16rem;
-    min-width: 16rem;
+    min-height: 24rem;
+    min-width: 24rem;
+    margin-right: 5rem;
 }
 
 .footer-info .touch_ul {
@@ -834,9 +855,10 @@ button {
 .footer-info .TOUCH p {
     padding: 0;
     margin: 0;
+    font-size: 18rem;
+    width: 100%;
+    min-width: 200rem;
 }
-
-
 
 .footer .links {
     display: flex;
@@ -850,16 +872,21 @@ button {
     margin: 0;
 }
 
+.footer .links li {
+    font-size: 20rem;
+    margin-bottom: 5rem;
+}
+
 .footer button {
-    font-size: 14rem;
+    font-size: 18rem;
     letter-spacing: 1rem;
-    line-height: 30rem;
+    line-height: 48rem;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #0099ff;
     border: 2rem solid #0099ff;
     border-radius: 50rem;
-    padding: 0rem 40rem;
+    padding: 0rem 120rem;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -882,16 +909,17 @@ button {
 }
 
 input {
-    font-size: 14rem;
+    font-size: 18rem;
     letter-spacing: 1rem;
-    line-height: 30rem;
+    line-height: 48rem;
     text-transform: uppercase;
     color: #ffffff;
     background-color: transparent;
     border: 0.5rem solid #ffffff;
     border-radius: 50rem;
-    padding: 0rem 40rem;
+    padding: 0rem 55rem;
     transition: 0.4s;
+    text-align: center;
 }
 
 input:hover {
@@ -900,7 +928,7 @@ input:hover {
 
 input::placeholder {
     color: rgb(255, 255, 255);
-    font-size: 14rem;
+    font-size: 18rem;
     font-weight: 300;
     text-transform: none;
 }
@@ -926,8 +954,9 @@ input::placeholder:hover {
 
 .email .social-logo-footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     gap: 35rem;
+    margin-top: 20rem;
 }
 
 .footer .footer-bottom {
