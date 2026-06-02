@@ -73,7 +73,7 @@ main {
 .bc1 {
     position: absolute;
     z-index: -1;
-    top: -14%;
+    top: -9%;
     left: 45%;
     object-fit: cover;
     min-width: 50rem;
@@ -85,8 +85,9 @@ main {
 .bc2 {
     position: absolute;
     z-index: -1;
-    top: 1270rem;
-    left: -200rem;
+    top: 1170rem;
+    left: -350rem;
+    min-width: 870rem;
 }
 
 .bc4 {
@@ -336,16 +337,16 @@ button {
     color: #1a1a1a;
     margin: 0;
     max-width: 750rem;
-    padding-left: 20rem;
+    padding-left: 30rem;
 }
 
 .part2 h2::before {
     content: "";
     position: absolute;
-    width: 5rem;
+    width: 15rem;
     height: 420rem;
     background-color: #0099ff;
-    left: 2.5rem;
+    left: 200rem;
 }
 
 .part2 img {
@@ -364,12 +365,14 @@ button {
     color: #2b2b2b;
     max-width: 600rem;
     margin: 36rem 0;
+    padding-left:10rem;
 }
 
 .part2 .button2 {
     font-size: 14rem;
     letter-spacing: 1rem;
     line-height: 48rem;
+    margin-left: 10rem;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #0099ff;
@@ -428,6 +431,7 @@ button {
     position: relative;
     justify-content: center;
     margin-bottom: 300rem;
+    margin-top: 75rem;
 }
 
 .part2,
@@ -622,8 +626,10 @@ button {
 .part5 h2::before {
     content: "";
     position: absolute;
-    width: 4rem;
-    height: 135.5rem;
+    width: 5rem;
+    height: 210rem;
+    min-height: 135.5rem;
+    
     background-color: #0099ff;
     left: 32.5rem;
 }
@@ -722,7 +728,6 @@ button {
 
 .part7 .text {
     margin-right: 25rem;
-    text-align: center;
     margin: auto;
 }
 
@@ -920,7 +925,7 @@ button {
     content: '';
     position: absolute;
     width: 100%;
-    v height: 100%;
+    height: 100%;
     background: linear-gradient(45deg, transparent, rgba(178, 221, 247, 0.842), transparent);
     top: -100%;
     right: -100%;
@@ -946,7 +951,7 @@ input {
     text-align: center;
 }
 
-v input:hover {
+input:hover {
     border: 0.5rem solid #9c9c9c;
 }
 
@@ -1125,7 +1130,7 @@ input::placeholder:hover {
     .part2 h2::before {
         content: "";
         position: absolute;
-        width: 5rem;
+        width: 5rem !important;
         height: 200rem;
         background-color: #0099ff;
         left: 2.5rem;
