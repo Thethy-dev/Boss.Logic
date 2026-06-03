@@ -1372,14 +1372,76 @@ input::placeholder:hover {
         padding: 0rem 235rem;
     }
 
+    .part2 {
+        padding-left: 42.5rem;
+    }
+
+    .part3 {
+        padding-left: 25rem;
+    }
+
     .part1 {
-        padding: 0 60rem;
+        padding: 0rem 0rem 0 90rem;
+        gap: 180rem;
         display: flex;
         justify-content: flex-end !important;
     }
 
+    .part1 h1::before {
+        content: "";
+        position: absolute;
+        width: 4rem;
+        height: 140rem;
+        background-color: #0099ff;
+        margin-right: 0rem;
+        left: -15rem;
+    }
+
+    .part7, .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20rem;
+        margin-right: 60rem !important;
+        align-items: flex-start;
+    }
+
+    .part7 {
+        gap: 60rem;
+    }
+
+    .bc1 {
+        top: -95%;
+        left: 30%;
+        object-fit: cover;
+        min-width: 250rem;
+        min-height: 250rem;
+        width: 2400rem;
+        height: 500rem;
+    }
+
+    .bc2 {
+        top: 875rem;
+        left: -200rem;
+        width: 1000rem !important;
+    }
+
+     .bc4 {
+        top: 4900rem;
+        right: -45%;
+        width: 1400rem !important;
+    }
+
     img {
         width: 100% !important;
+    }
+
+    .part3 h2::before {
+        content: "";
+        position: absolute;
+        width: 3.5rem;
+        height: 130rem;
+        background-color: #0099ff;
+        left: 220rem !important;
     }
 }
 
