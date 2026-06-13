@@ -250,7 +250,7 @@ button {
     content: "";
     position: absolute;
     width: 4rem;
-    height: 290rem;
+    height: 100% !important;
     background-color: #0099ff;
     margin-right: 10rem;
     left: -25rem;
@@ -1049,6 +1049,7 @@ input::placeholder:hover {
     flex-direction: row;
     justify-content: space-between;
     opacity: 0.612;
+    padding: 0 40rem;
     font-size: 14rem;
     color: #ffffff;
     font-weight: 300;
@@ -1456,6 +1457,27 @@ input::placeholder:hover {
         display: flex;
     }
 
+    .bc1 {
+        top: -75%;
+        left: 85%;
+        object-fit: cover;
+        min-width: 250rem;
+        min-height: 250rem;
+        width: 1600rem;
+        height: 500rem;
+    }
+}
+
+@media screen and (min-width: 1640px) {
+    .bc1 {
+        top: -80%;
+        left: 85%;
+        object-fit: cover;
+        min-width: 250rem;
+        min-height: 250rem;
+        width: 2000rem;
+        height: 500rem;
+    }
 }
 
 @media screen and (min-width: 1920px) {
@@ -1579,8 +1601,8 @@ input::placeholder:hover {
     }
 
     .bc1 {
-        top: -60%;
-        left: 77.5%;
+        top: -67.5%;
+        left: 82.5%;
         object-fit: cover;
         min-width: 250rem;
         min-height: 250rem;
@@ -1606,7 +1628,7 @@ input::placeholder:hover {
         height: 130rem;
         width: 4rem;
         background-color: #0099ff;
-        left: 7% !important;
+        left: 9% !important;
     }
 
     .footer .boss p::before {
@@ -1622,6 +1644,17 @@ input::placeholder:hover {
     .footer .links {
         justify-content: center !important;
         align-items: center !important;
+    }
+}
+
+@media screen and (min-wedth: 2100px) {
+    .part3 h2::before {
+        content: "";
+        position: absolute;
+        height: 130rem;
+        width: 4rem;
+        background-color: #0099ff;
+        left: -5% !important;
     }
 }
 

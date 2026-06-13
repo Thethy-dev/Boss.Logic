@@ -14,3 +14,10 @@ menuLinks.forEach(link => {
         menuBtn.classList.remove("active");
     });
 });
+
+menuLinks.forEach(menu => {
+    menu.addEventListener("click", () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("active");
+    });
+});
