@@ -172,7 +172,7 @@ button {
     display: flex;
     align-items: center;
     width: 180rem;
-    height: 40rem;
+    height: 50rem;
     padding-top: 10rem;
 }
 
@@ -387,7 +387,7 @@ button {
     color: #2b2b2b;
     max-width: 600rem;
     margin: 36rem 0;
-    padding-left:10rem;
+    padding-left: 10rem;
 }
 
 .part2 .button2 {
@@ -1159,6 +1159,30 @@ input::placeholder:hover {
     font-family: "Geometria";
 }
 
+.footer .footer-info {
+    margin: 0;
+}
+
+.footer .footer-bottom::before {
+    top: 725rem;
+}
+
+.footer .footer-bottom {
+    min-height: 180rem;
+}
+
+.part1 {
+    padding-top: 140rem;
+}
+
+.footer .footer-bottom::before {
+        top: 55rem;
+}
+
+.footer .footer-bottom .ul_bottom {
+    flex-wrap: nowrap !important;
+}
+
 @media screen and (min-width: 768px) {
     html {
         font-size: 0.85px;
@@ -1212,7 +1236,12 @@ input::placeholder:hover {
         content: "";
         position: absolute;
         height: 130rem;
+        left: 15% !important;
         background-color: #0099ff;
+    }
+
+    .footer .footer-bottom::before {
+        top: 75rem;
     }
 
     .part1 h1::before {
@@ -1240,7 +1269,7 @@ input::placeholder:hover {
         width: 1000rem !important;
     }
 
-     .bc1 {
+    .bc1 {
         top: -20%;
         left: 90%;
         object-fit: cover;
@@ -1250,7 +1279,7 @@ input::placeholder:hover {
         height: 500rem;
     }
 
-     .bc2_img {
+    .bc2_img {
         width: 100%;
         height: 100%;
     }
@@ -1288,20 +1317,20 @@ input::placeholder:hover {
     }
 
     .part6 .images {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 50rem;
-    grid-row-gap: 50rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 50rem;
+        grid-row-gap: 50rem;
     }
 
     .mg {
         width: unset !important;
-        height: unset  !important;
+        height: unset !important;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-  
+
     .part1,
     .part2,
     .part3,
@@ -1402,7 +1431,7 @@ input::placeholder:hover {
 
     .bc1 {
         top: -25%;
-        left: 75%;
+        left: 65%;
         object-fit: cover;
         min-width: 250rem;
         min-height: 250rem;
@@ -1417,6 +1446,7 @@ input::placeholder:hover {
 }
 
 @media screen and (min-width: 1440px) {
+
     .menu-button,
     .menu {
         display: none;
@@ -1425,16 +1455,16 @@ input::placeholder:hover {
     .list-header {
         display: flex;
     }
-    
+
 }
 
 @media screen and (min-width: 1920px) {
-    html {
-        font-size: 1.00px;
+    .part7 {
+        gap: 160rem !important;
     }
 
-    .part7 {
-        gap: 20px;
+    .part3 {
+        gap: 310rem !important;
     }
 
     html h2 {
@@ -1453,6 +1483,10 @@ input::placeholder:hover {
         align-items: start;
         justify-items: stretch;
         padding: 0;
+    }
+
+    .header .logo {
+        padding-top: 25rem;
     }
 
     .footer .footer-info div {
@@ -1478,6 +1512,11 @@ input::placeholder:hover {
         align-items: flex-start;
     }
 
+    .header {
+        gap: 50rem !important;
+        padding: 0 160rem !important;
+    }
+
     .footer .footer-bottom {
         padding-top: 35rem;
     }
@@ -1492,15 +1531,30 @@ input::placeholder:hover {
 
     .part2 {
         padding-left: 42.5rem;
+        gap: 180rem;
+    }
+
+    .part1 .text {
+        max-width: 37.5%;
     }
 
     .part3 {
         padding-left: 25rem;
     }
 
+    .footer .boss img {
+        max-width: 300px !important;
+        min-width: 280px !important;
+        padding-left: 70rem;
+    }
+
+    .footer .boss {
+        text-align: center;
+    }
+
     .part1 {
         padding: 0rem 0rem 0 90rem;
-        gap: 180rem;
+        gap: 242.5rem;
         display: flex;
         justify-content: flex-end !important;
     }
@@ -1515,7 +1569,8 @@ input::placeholder:hover {
         left: -15rem;
     }
 
-    .part7, .text {
+    .part7,
+    .text {
         display: flex;
         flex-direction: column;
         gap: 20rem;
@@ -1523,13 +1578,9 @@ input::placeholder:hover {
         align-items: flex-start;
     }
 
-    .part7 {
-        gap: 60rem;
-    }
-
     .bc1 {
-        top: -95%;
-        left: 30%;
+        top: -60%;
+        left: 77.5%;
         object-fit: cover;
         min-width: 250rem;
         min-height: 250rem;
@@ -1538,28 +1589,39 @@ input::placeholder:hover {
     }
 
     .bc2 {
-        top: 875rem;
-        left: -200rem;
-        width: 1000rem !important;
+        top: 1000rem;
+        left: -10rem;
+        width: 1150rem !important;
     }
 
-     .bc4 {
-        top: 4900rem;
-        right: -45%;
+    .bc4 {
+        top: 5580rem;
+        right: -10%;
         width: 1400rem !important;
-    }
-
-    img {
-        width: 100% !important;
     }
 
     .part3 h2::before {
         content: "";
         position: absolute;
-        width: 3.5rem;
         height: 130rem;
+        width: 4rem;
         background-color: #0099ff;
-        left: 220rem !important;
+        left: 7% !important;
+    }
+
+    .footer .boss p::before {
+        content: "";
+        position: absolute;
+        width: 320rem;
+        height: 4rem;
+        left: 5%;
+        background-color: #0099ff;
+        top: -15rem;
+    }
+
+    .footer .links {
+        justify-content: center !important;
+        align-items: center !important;
     }
 }
 
@@ -1568,10 +1630,58 @@ input::placeholder:hover {
         font-size: 1.5px;
     }
 
+    .logo {
+        min-width: 100rem;
+    }
+
     .header {
-        padding-left: 60rem;
-        padding-right: 60rem;
-        box-sizing: border-box;
+        padding: 0 60rem !important;
+    }
+
+    .part1 .text {
+        max-width: 50%;
+    }
+
+    .bc2 {
+        top: 800rem;
+        left: -10rem;
+        width: 900rem !important;
+    }
+
+    .bc4 {
+        top: 5300rem;
+        right: -10%;
+        width: 1500rem !important;
+    }
+
+    .part7 {
+        gap: 40rem !important;
+    }
+
+    .footer .boss p::before {
+        content: "";
+        position: absolute;
+        width: 270rem;
+        height: 4rem;
+        left: 1%;
+        background-color: #0099ff;
+        top: -15rem;
+    }
+
+    .footer .boss img {
+        max-width: 100% !important;
+        min-width: 80%;
+        min-height: 40px;
+        padding-left: 37.5rem;
+    }
+
+    .part3 h2::before {
+        content: "";
+        position: absolute;
+        height: 130rem;
+        width: 4rem;
+        background-color: #0099ff;
+        left: 2% !important;
     }
 
     html h2 {
