@@ -14,7 +14,7 @@ html h2 {
 }
 
 body {
-    margin: 0 !important;
+    margin: 0;
     padding: 0;
     font-family: "Geometria";
     background-color: #fff;
@@ -23,48 +23,61 @@ body {
     overflow-x: hidden;
 }
 
-h2::before {
-    width: 4rem !important;
-}
-
 html,
 body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
+.part1 h2,
+.part2 h2,
+.part3 h2,
+.part4 h2,
+.part5 h2,
+.part6 h2,
+.part7 h2 {
+    position: relative;
+    padding-right: 10rem;
+}
+
+.part1 h2::before,
+.part2 h2::before,
+.part3 h2::before,
+.part4 h2::before,
+.part5 h2::before,
+.part6 h2::before,
+.part7 h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 100%;
+    background-color: #0099ff;
+}
+
+
 button:hover {
-    box-shadow: rgba(9, 155, 252, 0.9856) 2px 2px 2px 2px !important;
+    box-shadow: rgba(9, 155, 252, 0.9856) 2px 2px 2px 2px;
 }
 
 img {
-    max-width: 100% !important;
-    min-width: auto !important;
+    max-width: 100%;
+    min-width: auto;
     width: auto;
     height: auto;
     display: block;
 }
 
-body h2,
-h3,
-p,
-h4 {
-    font-family: "Geometria";
-}
-
-h2::before {
-    left: -3rem !important;
-}
-
 .part1,
 .part2,
 .part3,
-.part,
+.part4,
 .part5,
 .part6,
 .part7 {
     display: flex;
-    flex-direction: column !important;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
     padding-left: 0rem;
@@ -142,6 +155,7 @@ main h3 {
     min-height: 50rem;
     width: 100%;
     overflow: hidden;
+    align-items: center;
 }
 
 button {
@@ -217,43 +231,39 @@ button {
     gap: 20rem;
     padding-left: 45rem;
 }
-
 .part1 {
     margin-top: 50rem;
     padding-top: 50rem;
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 35rem;
     align-items: center;
     padding-left: 25rem;
     max-height: 800rem;
     margin-bottom: 550rem;
 }
-
 .part1 .text {
     max-width: 100%;
     position: relative;
 }
 
 .part1 h1 {
-    font-size: 70rem;
     line-height: 74rem;
     color: #1a1a1a;
-    max-width: 100% !important;
+    max-width: 100%;
     margin-left: 10rem;
     margin: 0;
+    font-size: 70rem;
 }
 
 .part1 h1::before {
     content: "";
     position: absolute;
     width: 4rem;
-    height: 100% !important;
+    height: 100%;
     background-color: #0099ff;
     margin-right: 10rem;
-    left: -25rem;
 }
 
 .part1 .span_part1 {
@@ -345,8 +355,7 @@ button {
 .part2 {
     display: flex;
     justify-content: start;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 85rem;
     align-items: center;
     max-height: 800rem;
@@ -360,15 +369,6 @@ button {
     margin: 0;
     max-width: 750rem;
     padding-left: 30rem;
-}
-
-.part2 h2::before {
-    content: "";
-    position: absolute;
-    width: 15rem;
-    height: 420rem;
-    background-color: #0099ff;
-    left: 200rem;
 }
 
 .part2 img {
@@ -432,25 +432,14 @@ button {
     color: #1a1a1a;
     max-width: 650rem;
     padding-left: 25rem;
-}
-
-.part3 h2::before {
-    content: "";
-    position: absolute;
-    width: 4rem;
-    height: 285rem;
-    background-color: #0099ff;
-    left: 112rem;
-
+    position: relative;
 }
 
 .part3 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 235rem;
     align-items: center;
-    position: relative;
     justify-content: center;
     margin-bottom: 300rem;
     margin-top: 75rem;
@@ -458,7 +447,7 @@ button {
 
 .part2,
 .part3 {
-    justify-content: center !important;
+    justify-content: center;
 }
 
 .part3 h3 {
@@ -476,6 +465,10 @@ button {
     font-size: 18rem;
     line-height: 26rem;
     color: #2b2b2b;
+}
+
+.part3 .h2_3 {
+    position: relative;
 }
 
 .part3 .button_3 {
@@ -588,14 +581,13 @@ button {
 .part4 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin-bottom: 65rem;
 }
 
 .part4 .cards,
 .bbutton {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -645,15 +637,6 @@ button {
     text-align: left;
     padding-left: 10rem;
     font-size: 70rem;
-}
-
-.part5 h2::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    min-height: 135.5rem;
-    background-color: #0099ff;
-    left: 32.5rem;
 }
 
 .part5 p {
@@ -778,7 +761,7 @@ button {
 }
 
 .button_7 {
-    display: block !important;
+    display: block;
     position: relative;
     transform: translateX(50%);
 }
@@ -1039,7 +1022,7 @@ input::placeholder:hover {
 
 .email .social-logo-footer {
     display: flex;
-    flex-direction: row !important;
+    flex-direction: row;
     gap: 35rem;
     margin-top: 20rem;
 }
@@ -1181,7 +1164,7 @@ input::placeholder:hover {
 }
 
 .footer .footer-bottom .ul_bottom {
-    flex-wrap: nowrap !important;
+    flex-wrap: nowrap;
 }
 
 @media screen and (min-width: 768px) {
@@ -1190,7 +1173,7 @@ input::placeholder:hover {
     }
 
     .part5 .p_5 {
-        padding: 0 !important;
+        padding: 0;
     }
 
     .part1,
@@ -1201,7 +1184,7 @@ input::placeholder:hover {
     .part6,
     .part7 {
         max-width: 100%;
-        flex-direction: column !important;
+        flex-wrap: wrap;
     }
 
     .part1 {
@@ -1211,7 +1194,7 @@ input::placeholder:hover {
     .part2 h2::before {
         content: "";
         position: absolute;
-        width: 5rem !important;
+        width: 5rem;
         height: 200rem;
         background-color: #0099ff;
         left: 2.5rem;
@@ -1237,7 +1220,7 @@ input::placeholder:hover {
         content: "";
         position: absolute;
         height: 130rem;
-        left: 15% !important;
+        left: 15%;
         background-color: #0099ff;
     }
 
@@ -1267,7 +1250,7 @@ input::placeholder:hover {
     .bc2 {
         top: 750rem;
         left: -200rem;
-        width: 1000rem !important;
+        width: 1000rem;
     }
 
     .bc1 {
@@ -1292,7 +1275,7 @@ input::placeholder:hover {
     .bc4 {
         top: 8100rem;
         right: -45%;
-        width: 1400rem !important;
+        width: 1400rem;
     }
 
     .part2 {
@@ -1310,11 +1293,11 @@ input::placeholder:hover {
     }
 
     .cards {
-        flex-direction: row !important;
+        flex-direction: row;
     }
 
     .part3 {
-        gap: 150rem !important;
+        gap: 150rem;
     }
 
     .part6 .images {
@@ -1325,8 +1308,8 @@ input::placeholder:hover {
     }
 
     .mg {
-        width: unset !important;
-        height: unset !important;
+        width: unset;
+        height: unset;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1340,7 +1323,7 @@ input::placeholder:hover {
     .part7 {
         max-width: 100%;
         min-width: 100%;
-        flex-direction: row !important;
+        flex-direction: row;
     }
 
     .part3 {
@@ -1353,7 +1336,7 @@ input::placeholder:hover {
         width: 3.5rem;
         height: 130rem;
         background-color: #0099ff;
-        left: 20rem !important;
+        left: 20rem;
     }
 
 
@@ -1361,7 +1344,7 @@ input::placeholder:hover {
         padding: 0rem 10rem 0 90rem;
         gap: 180rem;
         display: flex;
-        justify-content: flex-end !important;
+        justify-content: flex-end;
     }
 
     .part5 h2 {
@@ -1369,7 +1352,7 @@ input::placeholder:hover {
         line-height: 74rem;
         color: #1a1a1a;
         font-weight: 600;
-        max-width: 100% !important;
+        max-width: 100%;
     }
 
     .part5 h2::before {
@@ -1396,7 +1379,7 @@ input::placeholder:hover {
         width: 4rem;
         height: 100rem;
         background-color: #0099ff;
-        left: -4rem !important;
+        left: -4rem;
     }
 
     .footer .footer-info {
@@ -1421,13 +1404,13 @@ input::placeholder:hover {
     .bc4 {
         top: 5100rem;
         right: -32.5%;
-        width: 1400rem !important;
+        width: 1400rem;
     }
 
     .bc2 {
         top: 775rem;
         left: -20rem;
-        width: 900rem !important;
+        width: 900rem;
     }
 
     .bc1 {
@@ -1486,11 +1469,11 @@ input::placeholder:hover {
 
 @media screen and (min-width: 1920px) {
     .part7 {
-        gap: 160rem !important;
+        gap: 160rem;
     }
 
     .part3 {
-        gap: 310rem !important;
+        gap: 310rem;
     }
 
     html h2 {
@@ -1539,8 +1522,8 @@ input::placeholder:hover {
     }
 
     .header {
-        gap: 50rem !important;
-        padding: 0 160rem !important;
+        gap: 50rem;
+        padding: 0 160rem;
     }
 
     .footer .footer-bottom {
@@ -1569,8 +1552,8 @@ input::placeholder:hover {
     }
 
     .footer .boss img {
-        max-width: 300px !important;
-        min-width: 280px !important;
+        max-width: 300px ;
+        min-width: 280px ;
         padding-left: 70rem;
     }
 
@@ -1582,7 +1565,7 @@ input::placeholder:hover {
         padding: 0rem 0rem 0 90rem;
         gap: 242.5rem;
         display: flex;
-        justify-content: flex-end !important;
+        justify-content: flex-end ;
     }
 
     .part1 h1::before {
@@ -1600,7 +1583,7 @@ input::placeholder:hover {
         display: flex;
         flex-direction: column;
         gap: 20rem;
-        margin-right: 60rem !important;
+        margin-right: 60rem ;
         align-items: flex-start;
     }
 
@@ -1617,13 +1600,13 @@ input::placeholder:hover {
     .bc2 {
         top: 1000rem;
         left: -10rem;
-        width: 1150rem !important;
+        width: 1150rem ;
     }
 
     .bc4 {
         top: 5580rem;
         right: -10%;
-        width: 1400rem !important;
+        width: 1400rem ;
     }
 
     .part3 h2::before {
@@ -1632,7 +1615,7 @@ input::placeholder:hover {
         height: 130rem;
         width: 4rem;
         background-color: #0099ff;
-        left: 9% !important;
+        left: 9% ;
     }
 
     .footer .boss p::before {
@@ -1646,20 +1629,12 @@ input::placeholder:hover {
     }
 
     .footer .links {
-        justify-content: center !important;
-        align-items: center !important;
+        justify-content: center ;
+        align-items: center ;
     }
 }
 
 @media screen and (min-wedth: 2100px) {
-    .part3 h2::before {
-        content: "";
-        position: absolute;
-        height: 130rem;
-        width: 4rem;
-        background-color: #0099ff;
-        left: -5% !important;
-    }
 }
 
 @media screen and (min-width: 2260px) {
@@ -1672,7 +1647,7 @@ input::placeholder:hover {
     }
 
     .header {
-        padding: 0 60rem !important;
+        padding: 0 60rem ;
     }
 
     .part1 .text {
@@ -1682,17 +1657,17 @@ input::placeholder:hover {
     .bc2 {
         top: 800rem;
         left: -10rem;
-        width: 900rem !important;
+        width: 900rem ;
     }
 
     .bc4 {
         top: 5300rem;
         right: -10%;
-        width: 1500rem !important;
+        width: 1500rem ;
     }
 
     .part7 {
-        gap: 40rem !important;
+        gap: 40rem ;
     }
 
     .footer .boss p::before {
@@ -1706,7 +1681,7 @@ input::placeholder:hover {
     }
 
     .footer .boss img {
-        max-width: 100% !important;
+        max-width: 100% ;
         min-width: 80%;
         min-height: 40px;
         padding-left: 37.5rem;
@@ -1718,7 +1693,7 @@ input::placeholder:hover {
         height: 130rem;
         width: 4rem;
         background-color: #0099ff;
-        left: 2% !important;
+        left: 2% ;
     }
 
     html h2 {
