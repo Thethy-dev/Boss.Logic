@@ -29,7 +29,7 @@ body {
     scroll-behavior: smooth;
 }
 
-.part1 h2,
+.part1 h1,
 .part2 h2,
 .part3 h2,
 .part4 h2,
@@ -40,7 +40,7 @@ body {
     padding-right: 10rem;
 }
 
-.part1 h2::before,
+.part1 h1::before,
 .part2 h2::before,
 .part3 h2::before,
 .part4 h2::before,
@@ -252,18 +252,8 @@ button {
     line-height: 74rem;
     color: #1a1a1a;
     max-width: 100%;
-    margin-left: 10rem;
     margin: 0;
     font-size: 70rem;
-}
-
-.part1 h1::before {
-    content: "";
-    position: absolute;
-    width: 4rem;
-    height: 100%;
-    background-color: #0099ff;
-    margin-right: 10rem;
 }
 
 .part1 .span_part1 {
@@ -1191,15 +1181,6 @@ input::placeholder:hover {
         margin-bottom: 350rem;
     }
 
-    .part2 h2::before {
-        content: "";
-        position: absolute;
-        width: 5rem;
-        height: 200rem;
-        background-color: #0099ff;
-        left: 2.5rem;
-    }
-
     .social-logo {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -1216,26 +1197,8 @@ input::placeholder:hover {
         font-size: 1.4px;
     }
 
-    .part3 h2::before {
-        content: "";
-        position: absolute;
-        height: 130rem;
-        left: 15%;
-        background-color: #0099ff;
-    }
-
     .footer .footer-bottom::before {
         top: 75rem;
-    }
-
-    .part1 h1::before {
-        content: "";
-        position: absolute;
-        width: 4rem;
-        height: 140rem;
-        background-color: #0099ff;
-        margin-right: 10rem;
-        left: -25rem;
     }
 
     .part5 {
@@ -1323,22 +1286,12 @@ input::placeholder:hover {
     .part7 {
         max-width: 100%;
         min-width: 100%;
-        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .part3 {
         padding-left: 25rem;
     }
-
-    .part3 h2::before {
-        content: "";
-        position: absolute;
-        width: 3.5rem;
-        height: 130rem;
-        background-color: #0099ff;
-        left: 20rem;
-    }
-
 
     .part1 {
         padding: 0rem 10rem 0 90rem;
@@ -1353,15 +1306,6 @@ input::placeholder:hover {
         color: #1a1a1a;
         font-weight: 600;
         max-width: 100%;
-    }
-
-    .part5 h2::before {
-        content: "";
-        position: absolute;
-        width: 3.5rem;
-        height: 135.5rem;
-        background-color: #0099ff;
-        left: 32.5rem;
     }
 
     .part7 .h2_7 {
@@ -1460,10 +1404,6 @@ input::placeholder:hover {
         min-height: 250rem;
         width: 2000rem;
         height: 500rem;
-    }
-
-    .part1 h1::before {
-        height: 80rem;
     }
 }
 
@@ -1568,16 +1508,6 @@ input::placeholder:hover {
         justify-content: flex-end ;
     }
 
-    .part1 h1::before {
-        content: "";
-        position: absolute;
-        width: 4rem;
-        height: 140rem;
-        background-color: #0099ff;
-        margin-right: 0rem;
-        left: -15rem;
-    }
-
     .part7,
     .text {
         display: flex;
@@ -1607,15 +1537,6 @@ input::placeholder:hover {
         top: 5580rem;
         right: -10%;
         width: 1400rem ;
-    }
-
-    .part3 h2::before {
-        content: "";
-        position: absolute;
-        height: 130rem;
-        width: 4rem;
-        background-color: #0099ff;
-        left: 9% ;
     }
 
     .footer .boss p::before {
@@ -1685,15 +1606,6 @@ input::placeholder:hover {
         min-width: 80%;
         min-height: 40px;
         padding-left: 37.5rem;
-    }
-
-    .part3 h2::before {
-        content: "";
-        position: absolute;
-        height: 130rem;
-        width: 4rem;
-        background-color: #0099ff;
-        left: 2% ;
     }
 
     html h2 {
