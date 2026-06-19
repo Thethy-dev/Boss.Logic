@@ -84,9 +84,10 @@ img {
 .part7 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    padding: 0 0 0 0;
-    margin: 100rem 0 0 0;
+    padding: 0;
+    margin: 100rem 0 0;
 }
 
 .header,
@@ -224,6 +225,7 @@ button {
     gap: 20rem;
     padding-left: 45rem;
 }
+
 .part1 {
     display: flex;
     justify-content: center;
@@ -535,7 +537,7 @@ button {
 
 .part4 .cards {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 35rem;
 }
 
@@ -555,8 +557,6 @@ button {
 .part5 {
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    align-items: center;
     gap: 115rem;
 }
 
@@ -635,6 +635,14 @@ button {
     overflow: hidden;
 }
 
+.part7,
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20rem;
+}
+
 .part7 button::before {
     content: '';
     position: absolute;
@@ -652,16 +660,7 @@ button {
 }
 
 .part7 {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
     gap: 90rem;
-    justify-self: center;
-}
-
-.part7 .text {
-    margin-right: 25rem;
-    margin: auto;
 }
 
 .part7 img {
@@ -741,11 +740,9 @@ button {
 
 }
 
-
-
 .footer .footer-info div {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -771,6 +768,7 @@ button {
 
 .footer-info .TOUCH {
     padding: 0;
+    flex-direction: column;
 }
 
 .footer-info ul li {
@@ -823,9 +821,9 @@ button {
 
 .footer .footer-bottom {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
     opacity: 0.612;
     font-size: 14rem;
     color: #ffffff;
@@ -1069,7 +1067,7 @@ input::placeholder:hover {
 }
 
 .footer .footer-bottom::before {
-        top: 55rem;
+    top: 55rem;
 }
 
 .footer .footer-bottom .ul_bottom {
@@ -1091,7 +1089,6 @@ input::placeholder:hover {
     .part5,
     .part6,
     .part7 {
-        max-width: 100%;
         flex-wrap: wrap;
     }
 
@@ -1121,15 +1118,6 @@ input::placeholder:hover {
 
     .footer .footer-bottom::before {
         top: 75rem;
-    }
-
-    .part5 {
-        margin: 0;
-    }
-
-    .part7 {
-        margin-top: 50rem;
-        margin-bottom: 10rem;
     }
 
     .bc2 {
@@ -1214,10 +1202,6 @@ input::placeholder:hover {
         gap: 180rem;
         display: flex;
         justify-content: flex-end;
-    }
-
-    .part7 .text {
-        padding-left: 40rem;
     }
 
     .footer .footer-info {
@@ -1369,7 +1353,6 @@ input::placeholder:hover {
     }
 
     .part2 {
-        padding-left: 42.5rem;
         gap: 180rem;
     }
 
@@ -1377,13 +1360,10 @@ input::placeholder:hover {
         max-width: 37.5%;
     }
 
-    .part3 {
-        padding-left: 25rem;
-    }
 
     .footer .boss img {
-        max-width: 300px ;
-        min-width: 280px ;
+        max-width: 300px;
+        min-width: 280px;
         padding-left: 70rem;
     }
 
@@ -1395,16 +1375,7 @@ input::placeholder:hover {
         padding: 0rem 0rem 0 90rem;
         gap: 242.5rem;
         display: flex;
-        justify-content: flex-end ;
-    }
-
-    .part7,
-    .text {
-        display: flex;
-        flex-direction: column;
-        gap: 20rem;
-        margin-right: 60rem ;
-        align-items: flex-start;
+        justify-content: flex-end;
     }
 
     .bc1 {
@@ -1420,13 +1391,13 @@ input::placeholder:hover {
     .bc2 {
         top: 1000rem;
         left: -10rem;
-        width: 1150rem ;
+        width: 1150rem;
     }
 
     .bc4 {
         top: 5580rem;
         right: -10%;
-        width: 1400rem ;
+        width: 1400rem;
     }
 
     .footer .boss p::before {
@@ -1440,8 +1411,8 @@ input::placeholder:hover {
     }
 
     .footer .links {
-        justify-content: center ;
-        align-items: center ;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -1455,7 +1426,7 @@ input::placeholder:hover {
     }
 
     .header {
-        padding: 0 60rem ;
+        padding: 0 60rem;
     }
 
     .part1 .text {
@@ -1465,17 +1436,17 @@ input::placeholder:hover {
     .bc2 {
         top: 800rem;
         left: -10rem;
-        width: 900rem ;
+        width: 900rem;
     }
 
     .bc4 {
         top: 5300rem;
         right: -10%;
-        width: 1500rem ;
+        width: 1500rem;
     }
 
     .part7 {
-        gap: 40rem ;
+        gap: 40rem;
     }
 
     .footer .boss p::before {
@@ -1489,7 +1460,7 @@ input::placeholder:hover {
     }
 
     .footer .boss img {
-        max-width: 100% ;
+        max-width: 100%;
         min-width: 80%;
         min-height: 40px;
         padding-left: 37.5rem;
