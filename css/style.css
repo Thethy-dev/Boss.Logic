@@ -90,6 +90,10 @@ img {
     margin: 100rem 0 0;
 }
 
+.part1 {
+    align-items: center;
+}
+
 .header,
 .main {
     background-color: transparent;
@@ -130,11 +134,7 @@ main {
 .bc4 {
     position: absolute;
     z-index: -1;
-    top: 8800rem;
-    right: -100px;
-    max-width: 1200px;
-    width: 100%;
-    height: auto;
+    right: -17.5%;
 }
 
 main h3 {
@@ -1137,12 +1137,6 @@ input::placeholder:hover {
         height: 100%;
     }
 
-    .bc4 {
-        top: 8100rem;
-        right: -45%;
-        width: 1400rem;
-    }
-
     .part2 {
         margin-top: 120rem;
     }
@@ -1209,12 +1203,6 @@ input::placeholder:hover {
         max-width: 360rem;
         justify-content: center;
         justify-self: center;
-    }
-
-    .bc4 {
-        top: 5100rem;
-        right: -32.5%;
-        width: 1400rem;
     }
 
     .bc2 {
@@ -1375,12 +1363,6 @@ input::placeholder:hover {
         width: 1150rem;
     }
 
-    .bc4 {
-        top: 5580rem;
-        right: -10%;
-        width: 1400rem;
-    }
-
     .footer .links {
         justify-content: center;
         align-items: center;
@@ -1408,12 +1390,6 @@ input::placeholder:hover {
         top: 800rem;
         left: -10rem;
         width: 900rem;
-    }
-
-    .bc4 {
-        top: 5300rem;
-        right: -10%;
-        width: 1500rem;
     }
 
     .part7 {
