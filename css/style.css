@@ -42,6 +42,7 @@ body {
     line-height: 74rem;
     color: #1a1a1a;
     font-weight: 650;
+    max-width: 95%;
 }
 
 .part4 h2 {
@@ -68,11 +69,7 @@ button:hover {
 }
 
 img {
-    max-width: 100%;
-    min-width: auto;
-    width: auto;
-    height: auto;
-    display: block;
+    min-width: 50%;
 }
 
 .part1,
@@ -97,6 +94,10 @@ img {
 .header,
 .main {
     background-color: transparent;
+    overflow: hidden;
+}
+
+.footer {
     overflow: hidden;
     object-fit: cover;
 }
@@ -146,10 +147,16 @@ main h3 {
     flex-direction: row;
     justify-content: space-between;
     gap: 15rem;
-    padding: 10rem;
+    padding: 0 10%;
     width: 100%;
+    min-height: 50rem;
+    max-height: 80rem;
     overflow: hidden;
     align-items: center;
+}
+
+.image {
+    max-width: 100%;
 }
 
 button {
@@ -566,6 +573,16 @@ button {
 .part5 .imgga {
     width: 520rem;
     height: 555rem;
+}
+
+header .logo {
+    width: 150rem;
+    height: auto;
+}
+
+header .logo img {
+    width: 100%;
+    height: 100%;
 }
 
 .part5 .text {
@@ -1016,6 +1033,9 @@ input::placeholder:hover {
     top: -14px;
 }
 
+.list-m {
+    height: 100%;
+}
 
 .menu-button::after {
     content: "";
@@ -1074,6 +1094,10 @@ input::placeholder:hover {
     flex-wrap: nowrap;
 }
 
+header .social-logo div {
+    margin: 10rem;
+}
+
 @media screen and (min-width: 768px) {
     html {
         font-size: 0.85px;
@@ -1081,6 +1105,14 @@ input::placeholder:hover {
 
     .part5 .p_5 {
         padding: 0;
+    }
+
+    header .logo {
+        transform: scale(1.05);
+    }
+
+    header svg {
+        transform: scale(1.4);
     }
 
     .part1,
@@ -1100,12 +1132,6 @@ input::placeholder:hover {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         place-items: center
-    }
-
-    .header {
-        padding-left: 30rem;
-        padding-right: 30rem;
-        box-sizing: border-box;
     }
 
     html h2 {
@@ -1151,7 +1177,18 @@ input::placeholder:hover {
         max-width: 40%;
     }
 
-    .part5, .part3, .part1, .part7 {
+    header .logo {
+        transform: scale(1.1);
+    }
+
+    header svg {
+        transform: scale(1.6);
+    }
+
+    .part5,
+    .part3,
+    .part1,
+    .part7 {
         gap: 20rem;
     }
 
@@ -1274,6 +1311,14 @@ input::placeholder:hover {
         font-size: 1.8px;
     }
 
+    header .logo {
+        transform: scale(1.2);
+    }
+
+    header svg {
+        transform: scale(1.8);
+    }
+
     .footer {
         padding: 70rem 120rem 0 120rem;
     }
@@ -1295,10 +1340,6 @@ input::placeholder:hover {
         padding: 0;
     }
 
-    .header .logo {
-        padding-top: 25rem;
-    }
-
     .footer .boss {
         max-width: 360rem;
         justify-content: flex-start;
@@ -1312,21 +1353,12 @@ input::placeholder:hover {
         align-items: flex-start;
     }
 
-    .header {
-        gap: 50rem;
-        padding: 0 160rem;
-    }
-
     .footer .footer-bottom {
         padding-top: 35rem;
     }
 
     .footer .footer-bottom .ul_bottom {
         justify-content: flex-end;
-    }
-
-    .header {
-        padding: 0rem 235rem;
     }
 
     .part2 {
@@ -1367,6 +1399,10 @@ input::placeholder:hover {
         justify-content: center;
         align-items: center;
     }
+
+    .part4 {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 2260px) {
@@ -1378,10 +1414,6 @@ input::placeholder:hover {
         min-width: 100rem;
     }
 
-    .header {
-        padding: 0 60rem;
-    }
-
     .part1 .text {
         max-width: 50%;
     }
@@ -1390,6 +1422,10 @@ input::placeholder:hover {
         top: 800rem;
         left: -10rem;
         width: 900rem;
+    }
+
+    header .logo {
+        transform: scale(1.35);
     }
 
     .part7 {
@@ -1405,5 +1441,34 @@ input::placeholder:hover {
 
     html h2 {
         font-size: 2.0px;
+    }
+
+    .part1 img {
+        width: 100%;
+    }
+
+    .part1 .image {
+        min-width: 50%;
+    }
+
+    .part3 img {
+        width: 100%;
+    }
+
+    .part3 .image {
+        min-width: 50%;
+    }
+
+    .part5 {
+        align-items: center;
+        gap: 50rem;
+    }
+
+    .part5 img {
+        width: 100%;
+    }
+
+    .part5 .image {
+        min-width: 50%;
     }
 }
