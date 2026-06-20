@@ -84,6 +84,7 @@ img {
 .part7 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
     padding: 0;
     margin: 100rem 0 0;
@@ -231,6 +232,10 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 35rem;
+}
+
+.part1 .text {
+    max-width: 70%;
 }
 
 .part1 h1 {
@@ -385,15 +390,19 @@ button {
 }
 
 .part2 .text {
-    max-width: 710rem;
+    max-width: 575rem;
     position: relative;
 }
 
 .part3 {
     display: flex;
-    gap: 235rem;
+    gap: 325rem;
     align-items: center;
     justify-content: center;
+}
+
+.part3 .text {
+    max-width: 575rem;
 }
 
 .part2,
@@ -551,7 +560,7 @@ button {
 .part5 {
     display: flex;
     justify-content: center;
-    gap: 115rem;
+    gap: 300rem;
 }
 
 .part5 .imgga {
@@ -560,7 +569,7 @@ button {
 }
 
 .part5 .text {
-    max-width: 560rem;
+    max-width: 475rem;
 }
 
 .part5 p {
@@ -630,8 +639,11 @@ button {
 .part7 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20rem;
+    gap: 200rem;
+}
+
+.part7 .text {
+    max-width: 575rem;
 }
 
 .part7 button::before {
@@ -648,10 +660,6 @@ button {
 .part7 button:hover::before {
     top: 100%;
     left: 100%;
-}
-
-.part7 {
-    gap: 90rem;
 }
 
 .part7 img {
@@ -1084,10 +1092,6 @@ input::placeholder:hover {
         flex-wrap: wrap;
     }
 
-    .part4 {
-        flex-direction: column;
-    }
-
     .part1 {
         margin-bottom: 350rem;
     }
@@ -1149,16 +1153,20 @@ input::placeholder:hover {
         font-size: 1px;
     }
 
+    .part1 .text {
+        max-width: 40%;
+    }
+
+    .part5, .part3, .part1, .part7 {
+        gap: 20rem;
+    }
+
     html h2 {
         font-size: 1.6px;
     }
 
     .cards {
         flex-direction: row;
-    }
-
-    .part3 {
-        gap: 150rem;
     }
 
     .part6 .images {
@@ -1183,12 +1191,6 @@ input::placeholder:hover {
     .part6,
     .part7 {
         flex-wrap: nowrap;
-    }
-
-    .part1 {
-        padding: 0rem;
-        gap: 180rem;
-        display: flex;
     }
 
     .footer .footer-info {
@@ -1271,7 +1273,7 @@ input::placeholder:hover {
     }
 
     .header .social-logo {
-        display: none;
+        display: grid;
     }
 }
 
@@ -1280,16 +1282,19 @@ input::placeholder:hover {
         gap: 160rem;
     }
 
-    .part3 {
-        gap: 310rem;
-    }
-
     html h2 {
         font-size: 1.8px;
     }
 
     .footer {
         padding: 70rem 120rem 0 120rem;
+    }
+
+    .part7 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 200rem;
     }
 
     .footer .footer-info {
@@ -1344,7 +1349,6 @@ input::placeholder:hover {
         max-width: 37.5%;
     }
 
-
     .footer .boss img {
         max-width: 300px;
         min-width: 280px;
@@ -1353,13 +1357,6 @@ input::placeholder:hover {
 
     .footer .boss {
         text-align: center;
-    }
-
-    .part1 {
-        padding: 0rem 0rem 0 90rem;
-        gap: 242.5rem;
-        display: flex;
-        justify-content: flex-end;
     }
 
     .bc1 {
