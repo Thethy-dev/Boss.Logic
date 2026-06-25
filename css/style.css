@@ -1,4 +1,3 @@
-
 html {
     font-size: 0.7px;
     overflow-x: hidden;
@@ -1011,6 +1010,7 @@ input::placeholder:hover {
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: 0.3s;
     justify-content: center;
 }
 
@@ -1045,22 +1045,22 @@ input::placeholder:hover {
 }
 
 .menu-button.active::before {
-    left: 0;
-    top: 0;
+    top: 0 !important;
     transform: rotate(45deg);
-    z-index: 1001;
+    z-index: 10002;
 }
 
-.menu-button {
+.menu-button.active {
     background-color: transparent;
-    z-index: 1001;
+    border: none;
+    z-index: 10002;
+    box-shadow: none;
 }
 
 .menu-button.active::after {
-    left: 0;
-    bottom: 0;
+    bottom: 0 !important;
     transform: rotate(-45deg);
-    z-index: 1001;
+    z-index: 10002;
 }
 
 .menu.active {
@@ -1085,6 +1085,12 @@ input::placeholder:hover {
     color: #ffffff;
     font-weight: 500;
     font-family: "Geometria";
+}
+
+.social-logo_1 button,
+.social-logo button {
+    background-color: transparent;
+    border: none;
 }
 
 .footer .footer-info {
