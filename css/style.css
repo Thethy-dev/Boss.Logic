@@ -45,6 +45,21 @@ body {
     max-width: 95%;
 }
 
+.part1 .text,
+.part2 .text,
+.part3 .text,
+.part4 .text,
+.part5 .text,
+.part6 .text,
+.part7 .text {
+    max-width: 80%;
+    margin-bottom: 50rem;
+}
+
+main .part7 {
+    justify-content: center;
+}
+
 .part4 h2 {
     text-align: center;
 }
@@ -70,24 +85,38 @@ button:hover {
 }
 
 img {
-    min-width: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.part6 img {
     max-width: 100%;
     height: auto;
 }
 
-.part1,
-.part2,
+.image {
+    width: 95%;
+}
+
+.main .part1,
+.main .part2,
 .part3,
-.part4,
+.main .part4,
 .part5,
-.part6,
-.part7 {
+.main .part6,
+.main .part7 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
     padding: 0;
-    margin: 100rem 0 0;
+    gap: 5%;
+    margin: 200rem 0 0;
+}
+
+.main .part2,
+.main .part5 {
+    flex-wrap: wrap-reverse;
 }
 
 .part1 {
@@ -230,10 +259,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     gap: 35rem;
-}
-
-.part1 .text {
-    max-width: 70%;
 }
 
 .part1 h1 {
@@ -387,20 +412,10 @@ button {
     right: 100%;
 }
 
-.part2 .text {
-    max-width: 575rem;
-    position: relative;
-}
-
 .part3 {
     display: flex;
-    gap: 325rem;
     align-items: center;
     justify-content: center;
-}
-
-.part3 .text {
-    max-width: 575rem;
 }
 
 .part2,
@@ -558,7 +573,6 @@ button {
 .part5 {
     display: flex;
     justify-content: center;
-    gap: 300rem;
 }
 
 .part5 .imgga {
@@ -576,10 +590,6 @@ header .logo img {
     height: 100%;
     min-height: 40rem;
     min-width: 160rem;
-}
-
-.part5 .text {
-    max-width: 475rem;
 }
 
 .part5 p {
@@ -604,10 +614,6 @@ header .logo img {
     font-size: 18rem;
     letter-spacing: 1rem;
     line-height: 24rem;
-}
-
-.part5 .text {
-    position: relative;
 }
 
 .part6 .images {
@@ -650,10 +656,6 @@ header .logo img {
     display: flex;
     flex-wrap: wrap;
     gap: 200rem;
-}
-
-.part7 .text {
-    max-width: 575rem;
 }
 
 .part7 button::before {
@@ -1122,6 +1124,16 @@ header .social-logo div {
         font-size: 0.85px;
     }
 
+    .part1 .text,
+    .part2 .text,
+    .part3 .text,
+    .part4 .text,
+    .part5 .text,
+    .part6 .text,
+    .part7 .text {
+        max-width: 60%;
+    }
+
     .part5 .p_5 {
         padding: 0;
     }
@@ -1182,8 +1194,8 @@ header .social-logo div {
         height: 100%;
     }
 
-    .part2 {
-        margin-top: 120rem;
+    .image {
+        width: 60%;
     }
 }
 
@@ -1192,8 +1204,8 @@ header .social-logo div {
         font-size: 1px;
     }
 
-    .part1 .text {
-        max-width: 40%;
+    .image {
+        max-width: 50%;
     }
 
     header .logo {
@@ -1204,11 +1216,14 @@ header .social-logo div {
         transform: scale(1.6);
     }
 
-    .part5,
-    .part3,
-    .part1,
-    .part7 {
-        gap: 20rem;
+    .part1 .text,
+    .part2 .text,
+    .part3 .text,
+    .part4 .text,
+    .part5 .text,
+    .part6 .text,
+    .part7 .text {
+        max-width: 45%;
     }
 
     html h2 {
@@ -1319,13 +1334,13 @@ header .social-logo div {
     .header .social-logo {
         display: grid;
     }
+
+    .image {
+        width: 35%;
+    }
 }
 
 @media screen and (min-width: 1920px) {
-    .part7 {
-        gap: 160rem;
-    }
-
     html h2 {
         font-size: 1.8px;
     }
@@ -1336,6 +1351,16 @@ header .social-logo div {
 
     header svg {
         transform: scale(1.8);
+    }
+
+    .part1 .text,
+    .part2 .text,
+    .part3 .text,
+    .part4 .text,
+    .part5 .text,
+    .part6 .text,
+    .part7 .text {
+        max-width: 35%;
     }
 
     .footer {
@@ -1380,22 +1405,9 @@ header .social-logo div {
         justify-content: flex-end;
     }
 
-    .part2 {
-        gap: 180rem;
-    }
-
-    .part1 .text {
-        max-width: 37.5%;
-    }
-
     .footer .boss img {
         max-width: 300px;
         min-width: 280px;
-        padding-left: 70rem;
-    }
-
-    .footer .boss {
-        text-align: center;
     }
 
     .bc1 {
@@ -1429,18 +1441,20 @@ header .social-logo div {
         font-size: 1.5px;
     }
 
-    .logo {
-        min-width: 100rem;
-    }
-
-    .part1 .text {
-        max-width: 50%;
-    }
-
     .bc2 {
         top: 800rem;
         left: -10rem;
         width: 900rem;
+    }
+
+    .part1 .text,
+    .part2 .text,
+    .part3 .text,
+    .part4 .text,
+    .part5 .text,
+    .part6 .text,
+    .part7 .text {
+        max-width: 40%;
     }
 
     header .logo {
@@ -1452,30 +1466,12 @@ header .social-logo div {
     }
 
     .footer .boss img {
-        max-width: 100%;
         min-width: 80%;
         min-height: 40px;
-        padding-left: 37.5rem;
     }
 
     html h2 {
         font-size: 2.0px;
-    }
-
-    .part1 img {
-        width: 100%;
-    }
-
-    .part1 .image {
-        min-width: 50%;
-    }
-
-    .part3 img {
-        width: 100%;
-    }
-
-    .part3 .image {
-        min-width: 50%;
     }
 
     .part5 {
@@ -1483,11 +1479,4 @@ header .social-logo div {
         gap: 50rem;
     }
 
-    .part5 img {
-        width: 100%;
-    }
-
-    .part5 .image {
-        min-width: 50%;
-    }
 }
