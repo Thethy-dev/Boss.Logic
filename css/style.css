@@ -23,6 +23,11 @@ body {
     overflow-x: hidden;
 }
 
+.main,
+.footer {
+    overflow: hidden;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -141,32 +146,27 @@ main {
 .bc1 {
     position: absolute;
     z-index: -1;
-    top: -9%;
+    top: -10%;
     left: 95%;
     transform: translateX(-50%);
     object-fit: cover;
-    min-width: 300px;
-    min-height: 300px;
-    max-width: 100%;
-    width: 500px;
+    min-width: 100%;
     height: auto;
 }
 
 .bc2 {
     position: absolute;
     z-index: -1;
-    top: 1100rem;
-    left: 10%;
-    transform: translateX(-50%);
-    min-width: 600px;
-    max-width: 100%;
-    width: 600px;
+    top: 100%;
+    left: 0;
+    min-width: 400px;
     height: auto;
 }
 
 .bc4 {
     position: absolute;
     z-index: -1;
+    top: 100%;
     right: -17.5%;
 }
 
@@ -1173,29 +1173,19 @@ header .social-logo div {
         top: 75rem;
     }
 
-    .bc2 {
-        top: 750rem;
-        left: -200rem;
-        width: 1000rem;
+    .image {
+        width: 60%;
     }
 
     .bc1 {
+        position: absolute;
+        z-index: -1;
         top: -20%;
-        left: 90%;
+        left: 85%;
+        transform: translateX(-50%);
         object-fit: cover;
-        min-width: 250rem;
-        min-height: 250rem;
-        width: 2400rem;
-        height: 500rem;
-    }
-
-    .bc2_img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .image {
-        width: 60%;
+        min-width: 100%;
+        height: auto;
     }
 }
 
@@ -1275,27 +1265,6 @@ header .social-logo div {
         justify-content: center;
         justify-self: center;
     }
-
-    .bc2 {
-        top: 775rem;
-        left: -20rem;
-        width: 900rem;
-    }
-
-    .bc1 {
-        top: -25%;
-        left: 65%;
-        object-fit: cover;
-        min-width: 250rem;
-        min-height: 250rem;
-        width: 2400rem;
-        height: 500rem;
-    }
-
-    .bc2_img {
-        width: 100%;
-        height: 100%;
-    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1310,26 +1279,21 @@ header .social-logo div {
     }
 
     .bc1 {
-        top: -75%;
-        left: 85%;
+        position: absolute;
+        z-index: -1;
+        top: -50%;
+        left: 75%;
+        transform: translateX(-50%);
         object-fit: cover;
-        min-width: 250rem;
-        min-height: 250rem;
-        width: 1600rem;
-        height: 500rem;
+        min-width: 300px;
+        min-height: 300px;
+        max-width: 100%;
+        min-width: 2000px;
+        height: auto;
     }
 }
 
 @media screen and (min-width: 1640px) {
-    .bc1 {
-        top: -80%;
-        left: 85%;
-        object-fit: cover;
-        min-width: 250rem;
-        min-height: 250rem;
-        width: 2000rem;
-        height: 500rem;
-    }
 
     .header .social-logo {
         display: grid;
@@ -1410,22 +1374,6 @@ header .social-logo div {
         min-width: 280px;
     }
 
-    .bc1 {
-        top: -67.5%;
-        left: 82.5%;
-        object-fit: cover;
-        min-width: 250rem;
-        min-height: 250rem;
-        width: 2400rem;
-        height: 500rem;
-    }
-
-    .bc2 {
-        top: 1000rem;
-        left: -10rem;
-        width: 1150rem;
-    }
-
     .footer .links {
         justify-content: center;
         align-items: center;
@@ -1439,12 +1387,6 @@ header .social-logo div {
 @media screen and (min-width: 2260px) {
     html {
         font-size: 1.5px;
-    }
-
-    .bc2 {
-        top: 800rem;
-        left: -10rem;
-        width: 900rem;
     }
 
     .part1 .text,
