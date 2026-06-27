@@ -211,7 +211,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     gap: 15rem;
-    padding: 0 10%;
+    padding: 10rem 10%;
     width: 100%;
     min-height: 50rem;
     max-height: 100rem;
