@@ -154,7 +154,7 @@ img {
 .bc4 {
     position: absolute;
     z-index: -1;
-    top: 700rem;
+    top: 500rem;
     right: -50%;
     animation: bc 8s ease-in-out infinite alternate;
 }
