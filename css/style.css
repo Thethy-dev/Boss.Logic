@@ -20,16 +20,14 @@ body {
     background-color: #fff;
     width: 100%;
     box-sizing: border-box;
+}
+
+.footer {
     overflow-x: hidden;
 }
 
-.main,
-.footer {
-    overflow: hidden;
-}
-
-html,
-body {
+.html,
+.body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -119,6 +117,12 @@ img {
     margin: 200rem 0 0;
 }
 
+.main .part1,
+.main .part2,
+.main .part7 {
+    position: relative;
+}
+
 .main .part2,
 .main .part5 {
     flex-wrap: wrap-reverse;
@@ -131,7 +135,6 @@ img {
 .header,
 .main {
     background-color: transparent;
-    overflow: hidden;
 }
 
 .footer {
@@ -139,39 +142,55 @@ img {
     object-fit: cover;
 }
 
-main {
-    padding-left: 5rem;
-}
-
 .bc1 {
     position: absolute;
     z-index: -1;
-    top: -10%;
-    left: 95%;
-    transform: translateX(-50%);
-    object-fit: cover;
+    top: -50%;
+    left: 50%;
     min-width: 100%;
-    height: auto;
-}
-
-.bc2 {
-    position: absolute;
-    z-index: -1;
-    top: 100%;
-    left: 0;
-    min-width: 400px;
     height: auto;
 }
 
 .bc4 {
     position: absolute;
     z-index: -1;
-    top: 100%;
-    right: -17.5%;
+    top: 700rem;
+    right: -50%;
+    animation: bc 8s ease-in-out infinite alternate;
 }
 
-main h3 {
-    font-weight: 600;
+@keyframes bc {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    12.5% {
+        transform: scale(1.05);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    37.5% {
+        transform: scale(1.15);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    62.5% {
+        transform: scale(1.05);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    87.5% {
+        transform: scale(1.05);
+    }
 }
 
 .header {
@@ -183,7 +202,6 @@ main h3 {
     width: 100%;
     min-height: 50rem;
     max-height: 100rem;
-    overflow: hidden;
     align-items: center;
 }
 
@@ -195,16 +213,11 @@ button {
     transition: 0.4s;
 }
 
-.main {
-    padding-top: 40rem;
-}
-
 .wrapper {
     margin: 0;
     width: 100%;
     padding: 10rem;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 .list-m {
@@ -912,6 +925,15 @@ input {
     text-align: center;
 }
 
+.bc2 {
+    position: absolute;
+    z-index: -1;
+    top: 800rem;
+    left: -15%;
+    min-width: 400px;
+    height: auto;
+}
+
 input:hover {
     border: 0.5rem solid #9c9c9c;
 }
@@ -1134,6 +1156,13 @@ header .social-logo div {
         max-width: 60%;
     }
 
+    .bc4 {
+        position: absolute;
+        z-index: -1;
+        top: 90rem;
+        right: -50%;
+    }
+
     .part5 .p_5 {
         padding: 0;
     }
@@ -1180,11 +1209,18 @@ header .social-logo div {
     .bc1 {
         position: absolute;
         z-index: -1;
-        top: -20%;
-        left: 85%;
-        transform: translateX(-50%);
-        object-fit: cover;
+        top: -70%;
+        left: 50%;
         min-width: 100%;
+        height: auto;
+    }
+
+    .bc2 {
+        position: absolute;
+        z-index: -1;
+        top: 550rem;
+        left: 5%;
+        min-width: 400px;
         height: auto;
     }
 }
@@ -1265,6 +1301,29 @@ header .social-logo div {
         justify-content: center;
         justify-self: center;
     }
+
+    .part1 .bc1 {
+        top: -150%;
+        left: 50%;
+        height: auto;
+    }
+
+    .bc2 {
+        position: absolute;
+        z-index: -1;
+        top: -10%;
+        left: -15%;
+        min-width: 400px;
+        height: auto;
+    }
+
+    .bc4 {
+        position: absolute;
+        z-index: -1;
+        top: 100rem;
+        right: -15%;
+    }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -1278,18 +1337,11 @@ header .social-logo div {
         display: flex;
     }
 
-    .bc1 {
+    .part1 .bc1 {
         position: absolute;
         z-index: -1;
-        top: -50%;
-        left: 75%;
-        transform: translateX(-50%);
-        object-fit: cover;
-        min-width: 300px;
-        min-height: 300px;
-        max-width: 100%;
-        min-width: 2000px;
-        height: auto;
+        top: -150%;
+        left: 25%;
     }
 }
 
@@ -1299,8 +1351,13 @@ header .social-logo div {
         display: grid;
     }
 
-    .image {
-        width: 35%;
+
+
+    .bc4 {
+        position: absolute;
+        z-index: -1;
+        top: 10rem;
+        right: -15%;
     }
 }
 
@@ -1382,6 +1439,13 @@ header .social-logo div {
     .part4 {
         flex-direction: column;
     }
+
+    .bc4 {
+        position: absolute;
+        z-index: -1;
+        top: -150rem;
+        right: -10%;
+    }
 }
 
 @media screen and (min-width: 2260px) {
@@ -1419,6 +1483,14 @@ header .social-logo div {
     .part5 {
         align-items: center;
         gap: 50rem;
+    }
+
+    .main .part7 {
+        justify-content: flex-end;
+    }
+
+    .part7 .image {
+        min-width: 40%;
     }
 
 }
