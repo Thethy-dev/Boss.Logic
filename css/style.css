@@ -22,6 +22,19 @@ body {
     box-sizing: border-box;
 }
 
+header button, footer button {
+    border: none;
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.header button:hover, .footer button:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+} 
+
 .footer {
     overflow-x: hidden;
 }
@@ -214,8 +227,8 @@ button {
 }
 
 .wrapper {
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     padding: 10rem;
     box-sizing: border-box;
 }
@@ -880,7 +893,7 @@ header .logo img {
     margin-bottom: 5rem;
 }
 
-.footer button {
+.footer .fot-button {
     font-size: 18rem;
     letter-spacing: 1rem;
     line-height: 48rem;
@@ -895,7 +908,7 @@ header .logo img {
     overflow: hidden;
 }
 
-.footer button::before {
+.footer .fot-button::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -1324,6 +1337,73 @@ header .social-logo div {
         right: -15%;
     }
 
+}
+
+@media screen and (min-width: 1250px) {
+    .menu-button,
+    .menu {
+        display: none;
+    }
+
+    .list-header {
+        display: flex;
+    }
+
+    .footer {
+        padding: 70rem 120rem 0 120rem;
+    }
+
+    .part7 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 200rem;
+    }
+
+    .footer .footer-info {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-rows: auto;
+        gap: 45rem;
+        align-items: start;
+        justify-items: stretch;
+        padding: 0;
+    }
+
+    .footer .boss {
+        max-width: 360rem;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .footer .links,
+    .footer .TOUCH,
+    .footer .email {
+        align-items: flex-start;
+    }
+
+    .footer .footer-bottom {
+        padding-top: 35rem;
+    }
+
+    .footer .footer-bottom .ul_bottom {
+        justify-content: flex-end;
+    }
+
+    .footer .boss img {
+        max-width: 300px;
+        min-width: 280px;
+    }
+
+    .footer .links {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .part4 {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 1440px) {
