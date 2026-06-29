@@ -1,5 +1,5 @@
 html {
-    font-size: 0.7px;
+    font-size: 0.5px;
     overflow-x: hidden;
 }
 
@@ -31,9 +31,11 @@ header button, footer button {
 .header button:hover, .footer button:hover {
     background-color: transparent;
     border: none;
+    text-shadow: 2px 2px 20px #ffffff;
     box-shadow: none;
     cursor: pointer;
-} 
+    color: #0099ff;
+}
 
 .footer {
     overflow-x: hidden;
@@ -98,6 +100,7 @@ main .part7 {
 button:hover {
     box-shadow: rgba(9, 155, 252, 0.9856) 2px 2px 2px 2px;
     cursor: pointer;
+    text-shadow: none;
 }
 
 img {
@@ -211,7 +214,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     gap: 15rem;
-    padding: 10rem 10%;
+    padding: 20rem 10%;
     width: 100%;
     min-height: 50rem;
     max-height: 100rem;
