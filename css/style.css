@@ -214,7 +214,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     gap: 15rem;
-    padding: 20rem 10%;
+    padding: 30rem 5%;
     width: 100%;
     min-height: 50rem;
     max-height: 100rem;
@@ -248,7 +248,7 @@ button {
     display: none;
     flex-direction: row;
     align-items: center;
-    padding: 0rem 70rem 0rem 280rem;
+    padding: 0;
 }
 
 .list-m li {
@@ -610,15 +610,19 @@ button {
 }
 
 header .logo {
-    width: 150rem;
-    height: auto;
+    height: 30rem;
+    max-width: 150rem;
 }
 
 header .logo img {
     width: 100%;
     height: 100%;
-    min-height: 40rem;
-    min-width: 160rem;
+}
+
+.header .logo button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
 }
 
 .part5 p {
@@ -1188,7 +1192,7 @@ header .social-logo div {
     }
 
     header svg {
-        transform: scale(1.4);
+        transform: scale(1.05);
     }
 
     .part1,
@@ -1255,7 +1259,7 @@ header .social-logo div {
     }
 
     header svg {
-        transform: scale(1.6);
+        transform: scale(1.1);
     }
 
     .part1 .text,
@@ -1407,6 +1411,10 @@ header .social-logo div {
     .part4 {
         flex-direction: column;
     }
+
+    .header .social-logo {
+        display: grid;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1429,13 +1437,6 @@ header .social-logo div {
 }
 
 @media screen and (min-width: 1640px) {
-
-    .header .social-logo {
-        display: grid;
-    }
-
-
-
     .bc4 {
         position: absolute;
         z-index: -1;
@@ -1454,7 +1455,7 @@ header .social-logo div {
     }
 
     header svg {
-        transform: scale(1.8);
+        transform: scale(1.2);
     }
 
     .part1 .text,
