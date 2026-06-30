@@ -765,7 +765,6 @@ header .logo img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .footer .boss p {
@@ -780,18 +779,20 @@ header .logo img {
 .footer .boss p::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 4rem;
     left: 0%;
     background-color: #0099ff;
     top: -15rem;
 }
 
+.footer .boss button {
+    padding: 0;
+}
+
 .footer .footer-info div {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
 }
 
 .footer h2 {
@@ -801,7 +802,6 @@ header .logo img {
     text-transform: uppercase;
     color: #0099ff;
     font-weight: 600;
-    text-align: center;
     margin: 0rem;
     margin-bottom: 15rem;
 }
@@ -826,7 +826,15 @@ header .logo img {
 }
 
 .footer-info ul .lii {
-    max-width: 113rem;
+    max-width: 150rem;
+}
+
+.footer-info .TOUCH p {
+    text-align: left;
+}
+
+.footer-info ul .lii button {
+    padding: 0;
 }
 
 .footer-info svg {
@@ -837,6 +845,7 @@ header .logo img {
 
 .footer-info .touch_ul {
     padding: 0;
+    text-align: left;
 }
 
 .footer-info .TOUCH ul {
@@ -850,14 +859,11 @@ header .logo img {
     margin: 0;
     font-size: 18rem;
     width: 100%;
-    min-width: 0;
 }
 
 .footer .links {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 .footer .email {
@@ -1400,12 +1406,7 @@ header .social-logo div {
 
     .footer .boss img {
         max-width: 300px;
-        min-width: 280px;
-    }
-
-    .footer .links {
-        justify-content: center;
-        align-items: center;
+        min-width: 210px;
     }
 
     .part4 {
@@ -1513,11 +1514,6 @@ header .social-logo div {
     .footer .boss img {
         max-width: 300px;
         min-width: 280px;
-    }
-
-    .footer .links {
-        justify-content: center;
-        align-items: center;
     }
 
     .part4 {
