@@ -10,7 +10,7 @@ html {
 }
 
 html h2 {
-    font-size: 1.2px;
+    font-size: 0.7px;
 }
 
 body {
@@ -41,10 +41,8 @@ header button, footer button {
     overflow-x: hidden;
 }
 
-.html,
-.body {
+html {
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 .part1 h1,
@@ -689,6 +687,7 @@ header .logo img {
     display: flex;
     flex-wrap: wrap;
     gap: 200rem;
+    overflow-y: hidden;
 }
 
 .part7 button::before {
@@ -1169,7 +1168,7 @@ header .social-logo div {
 
 @media screen and (min-width: 768px) {
     html {
-        font-size: 0.85px;
+        font-size: 0.6px;
     }
 
     .part1 .text,
@@ -1221,7 +1220,7 @@ header .social-logo div {
     }
 
     html h2 {
-        font-size: 1.4px;
+        font-size: 0.8px;
     }
 
     .footer .footer-bottom::before {
@@ -1253,7 +1252,7 @@ header .social-logo div {
 
 @media screen and (min-width: 1200px) {
     html {
-        font-size: 1px;
+        font-size: 0.7px;
     }
 
     .image {
@@ -1279,7 +1278,7 @@ header .social-logo div {
     }
 
     html h2 {
-        font-size: 1.6px;
+        font-size: 0.9px;
     }
 
     .cards {
@@ -1448,7 +1447,7 @@ header .social-logo div {
 
 @media screen and (min-width: 1920px) {
     html h2 {
-        font-size: 1.8px;
+        font-size: 1.0px;
     }
 
     header .logo {
@@ -1530,7 +1529,7 @@ header .social-logo div {
 
 @media screen and (min-width: 2260px) {
     html {
-        font-size: 1.5px;
+        font-size: 0.8px;
     }
 
     .part1 .text,
@@ -1557,7 +1556,7 @@ header .social-logo div {
     }
 
     html h2 {
-        font-size: 2.0px;
+        font-size: 1.2px;
     }
 
     .part5 {
