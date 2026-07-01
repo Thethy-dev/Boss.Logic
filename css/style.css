@@ -20,15 +20,31 @@ body {
     background-color: #fff;
     width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-header button, footer button {
+header button,
+footer button {
     border: none;
     color: #ffffff;
     background-color: transparent;
 }
 
-.header button:hover, .footer button:hover {
+.header a:hover {
+    background-color: transparent;
+    border: none;
+    text-shadow: 2px 2px 20px #ffffff;
+    box-shadow: none;
+    cursor: pointer;
+    color: #fff8f8;
+    font-weight: 800;
+}
+
+a {
+    transition: 0.5s;
+}
+
+.footer button:hover {
     background-color: transparent;
     border: none;
     text-shadow: 2px 2px 20px #ffffff;
@@ -38,7 +54,7 @@ header button, footer button {
 }
 
 .footer {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 html {
@@ -142,8 +158,9 @@ img {
     flex-wrap: wrap-reverse;
 }
 
-.part1 {
+.main .part1 {
     align-items: center;
+    margin-top: 20rem;
 }
 
 .header,
@@ -174,36 +191,38 @@ img {
 }
 
 @keyframes bc {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
 
     12.5% {
-        transform: scale(1.05);
+        transform: scale(1.025);
     }
 
     25% {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 
     37.5% {
-        transform: scale(1.15);
+        transform: scale(1.075);
     }
 
     50% {
-        transform: scale(1.2);
-    }
-
-    62.5% {
-        transform: scale(1.05);
-    }
-
-    75% {
         transform: scale(1.1);
     }
 
-    87.5% {
+    62.5% {
+        transform: scale(1.075);
+    }
+
+    75% {
         transform: scale(1.05);
+    }
+
+    87.5% {
+        transform: scale(1.025);
     }
 }
 
@@ -255,7 +274,7 @@ button {
 
 .list-m li a {
     text-decoration: none;
-    font-size: 13rem;
+    font-size: 16rem;
     letter-spacing: 1rem;
     line-height: 85rem;
     text-transform: uppercase;
@@ -623,6 +642,12 @@ header .logo img {
     padding: 0;
 }
 
+.header .logo button:hover {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
 .part5 p {
     font-size: 21rem;
     line-height: 24rem;
@@ -650,14 +675,14 @@ header .logo img {
 .part6 .images {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20rem;
-    grid-row-gap: 50rem;
+    grid-column-gap: 10%;
+    grid-row-gap: 5%;
     justify-items: center;
 }
 
 .part6 .mg {
-    width: 180rem;
-    height: 100rem;
+    width: 300rem;
+    height: 150rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -687,7 +712,6 @@ header .logo img {
     display: flex;
     flex-wrap: wrap;
     gap: 200rem;
-    overflow-y: hidden;
 }
 
 .part7 button::before {
@@ -773,6 +797,14 @@ header .logo img {
 
 .footer .boss img {
     margin-bottom: 30rem;
+    max-width: 100%;
+    height: 100%;
+}
+
+.footer .boss button {
+    padding: 0;
+    max-width: 80%;
+    height: 100%;
 }
 
 .footer .boss p::before {
@@ -1142,6 +1174,13 @@ input::placeholder:hover {
     border: none;
 }
 
+.social-logo_1 button:hover,
+.social-logo button:hover {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
 .footer .footer-info {
     margin: 0;
 }
@@ -1250,7 +1289,7 @@ header .social-logo div {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
     html {
         font-size: 0.7px;
     }
@@ -1319,6 +1358,9 @@ header .social-logo div {
     .footer .footer-info div {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .footer .boss {
@@ -1345,13 +1387,15 @@ header .social-logo div {
     .bc4 {
         position: absolute;
         z-index: -1;
-        top: 100rem;
-        right: -15%;
+        top: -10%;
+        right: -25%;
+        max-width: 900px;
     }
 
 }
 
 @media screen and (min-width: 1250px) {
+
     .menu-button,
     .menu {
         display: none;
@@ -1399,13 +1443,16 @@ header .social-logo div {
         padding-top: 35rem;
     }
 
-    .footer .footer-bottom .ul_bottom {
-        justify-content: flex-end;
+    .footer .footer-info div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: unset;
+        justify-content: unset;
+        text-align: unset;
     }
 
-    .footer .boss img {
-        max-width: 300px;
-        min-width: 210px;
+    .footer .footer-bottom .ul_bottom {
+        justify-content: flex-end;
     }
 
     .part4 {
@@ -1414,6 +1461,14 @@ header .social-logo div {
 
     .header .social-logo {
         display: grid;
+    }
+
+    .bc4 {
+        position: absolute;
+        z-index: -1;
+        top: -35%;
+        right: -20%;
+        max-width: 850px;
     }
 }
 
@@ -1440,7 +1495,7 @@ header .social-logo div {
     .bc4 {
         position: absolute;
         z-index: -1;
-        top: 10rem;
+        top: -10%;
         right: -15%;
     }
 }
@@ -1510,11 +1565,6 @@ header .social-logo div {
         justify-content: flex-end;
     }
 
-    .footer .boss img {
-        max-width: 300px;
-        min-width: 280px;
-    }
-
     .part4 {
         flex-direction: column;
     }
@@ -1522,8 +1572,9 @@ header .social-logo div {
     .bc4 {
         position: absolute;
         z-index: -1;
-        top: -150rem;
-        right: -10%;
+        top: -30%;
+        right: -20%;
+        max-width: 1100px;
     }
 }
 
@@ -1548,11 +1599,6 @@ header .social-logo div {
 
     .part7 {
         gap: 40rem;
-    }
-
-    .footer .boss img {
-        min-width: 80%;
-        min-height: 40px;
     }
 
     html h2 {
